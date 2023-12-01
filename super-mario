@@ -1,0 +1,2255 @@
+World.frameRate=99999999990;
+var water=createGroup();
+for(var apa = 0; apa < 4; apa++){
+  water.add(createSprite(apa*1536,750));
+  water.get(apa).setAnimation("lova");
+  water.get(apa).scale=3;
+  water.get(apa).visible=false;
+}
+
+var eraser=createGroup();
+
+var bush=createGroup();
+
+var cloud=createGroup();
+for(var qw = 0; qw < 30; qw++){
+  cloud.add(createSprite(randomNumber(0,5000), randomNumber(0,650)));
+  cloud.get(qw).setAnimation("Cloud");
+  cloud.get(qw).scale=3;
+}
+
+var zz=0;
+var pipe2=createGroup();
+var plant=createGroup();
+for (var bb = 0; bb < zz+1; bb++) {
+  plant.add(createSprite(200,200));
+  plant.get(bb).setAnimation("Plant");
+  plant.get(bb).scale=1.5;
+  plant.get(bb).setCollider("rectangle",0,10);
+  
+  pipe2.add(createSprite(randomNumber(4, 55)*72, (randomNumber(7, 9)*36)+25));
+  pipe2.get(bb).setAnimation("pipe2");
+  pipe2.get(bb).scale=2.88;
+  pipe2.get(bb).bounciness=0;
+}
+var ff=1;
+var nm=0;
+
+var blo=createGroup();
+for (var i = 0; i < ff+1; i++) {
+blo.add(createSprite((i*2580)-316,1057));
+blo.get(i).setAnimation("Bloock3");
+blo.get(i).scale=2.4;
+}
+
+var blo2=createGroup();
+for (var we = 0; we < nm+1; we++) {
+blo2.add(createSprite(100,1000));
+blo2.get(we).setAnimation("YES");
+blo2.get(we).scale=2.4;
+}
+
+
+var gap4=createSprite(250,1435);
+gap4.setAnimation("leve");
+gap4.scale=3;
+var back=createSprite(250,1347);
+back.setAnimation("Back1");
+back.scale=1.4;
+var back2=createSprite(250,1387);
+back2.setAnimation("Back2");
+back2.scale=1.4;
+var bows=createSprite(250,1700);
+bows.setAnimation("arms");
+bows.scale=2.5;
+bows.mirrorX(bows.mirrorX()*-1);
+var be=0;
+
+for(var oo = 0; oo < be+1; oo++){
+  bush.add(createSprite(randomNumber(200,200)));
+  bush.get(oo).setAnimation("bush");
+  bush.get(oo).scale=3;
+  bush.get(oo).visible=false}
+
+var flag=createSprite(1915,853);
+flag.setAnimation("flag");
+flag.scale=3;
+var falg=createSprite(1893,751);
+falg.setAnimation("falg");
+falg.scale=2;
+
+
+var j=0;
+var d=0;
+var kk=1;
+var tt=0;
+var qq=0;
+var uu=0;
+var xx=0;
+var po=0;
+var op=0;
+var yb=0;
+var ty=0;
+var cv=0;
+var lq=0;
+var zu=0;
+
+var bla=createGroup();
+var vine=createGroup();
+for (var mm = 0; mm < j+1; mm++) {
+  //bla.add(createSprite(randomNumber(1, 55)*36, (randomNumber(-4, 7)*36)+16));
+  vine.add(createSprite(200,800));
+  vine.get(mm).setAnimation("vine");
+  vine.get(mm).scale=2.3;
+  bla.add(createSprite(200,200));
+  bla.get(mm).setAnimation("blo");
+  bla.get(mm).scale=2.4;
+  
+}
+
+var blu=createGroup();
+
+  blu.add(createSprite(1915,985));
+  blu.get(0).setAnimation("blo3");
+  blu.get(0).scale=2.4;
+for (var cc = 0; cc < kk; cc++) {
+  //blu.add(createSprite(randomNumber(1, 55)*36, (randomNumber(-4, 7)*36)+16));
+  blu.add(createSprite(200,200));
+  blu.get(cc).setAnimation("blo3");
+  blu.get(cc).scale=2.4;
+}
+
+
+var ble=createGroup();
+var mush=createGroup();
+var flower=createGroup();
+var star=createGroup();
+for (var hh = 0; hh < d+1; hh++) {
+  mush.add(createSprite(236,0));
+  mush.get(hh).setAnimation("mush");
+  mush.get(hh).scale=1.8;
+  mush.get(hh).visible=false;
+  mush.get(hh).bounciness=0;
+  
+  flower.add(createSprite(236,800));
+  flower.get(hh).setAnimation("fireFlower");
+  flower.get(hh).scale=1.8;
+  flower.get(hh).visible=false;
+  flower.get(hh).bounciness=0;
+  
+  star.add(createSprite(236,800));
+  star.get(hh).setAnimation("starman");
+  star.get(hh).scale=1.8;
+  //star.get(hh).visible=false;
+  star.get(hh).bounciness=0;
+  
+  //ble.add(createSprite(randomNumber(1, 55)*36, (randomNumber(-4, 7)*36)+16));
+  ble.add(createSprite(236,0));
+  ble.get(hh).setAnimation("ah");
+  ble.get(hh).scale=2.4;
+}
+
+var goo=createGroup();
+for (var ss = 0; ss < tt+1; ss++) {
+  //goo.add(createSprite(randomNumber(0, 55)*36, (randomNumber(0, 30)*36)+16));
+    goo.add(createSprite(200, 200));
+  goo.get(ss).setAnimation("goo");
+  goo.get(ss).scale=2.2;
+  goo.get(ss).velocityX=2;
+  goo.get(ss).bounciness=0;
+}
+
+var koop=createGroup();
+for (var yy = 0; yy < qq+1; yy++) {
+  //koop.add(createSprite(randomNumber(0, 55)*36, (randomNumber(0, 30)*36)+16));
+    koop.add(createSprite(200, 200));
+  koop.get(yy).setAnimation("koop");
+  koop.get(yy).scale=2.2;
+  koop.get(yy).velocityX=2;
+  koop.get(yy).bounciness=0;
+}
+
+var bro=createGroup();
+var ham=createGroup();
+for (var ii = 0; ii < uu+1; ii++) {
+ //bro.add(createSprite(randomNumber(0, 55)*36, (randomNumber(0, 30)*36)+16));
+    bro.add(createSprite(200, 200));
+  bro.get(ii).setAnimation("bro2");
+  bro.get(ii).scale=1.8;
+  bro.get(ii).bounciness=0;
+  
+  ham.add(createSprite(-1000,200));
+  ham.get(ii).setAnimation("ham");
+  ham.get(ii).scale=2.5;
+  ham.get(ii).rotationSpeed=12.5;
+}
+
+var bill=createGroup();
+var bull=createGroup();
+for (var aa = 0; aa < xx+1; aa++) {
+ bull.add(createSprite(-1000,200));
+  bull.get(aa).setAnimation("bullet");
+  bull.get(aa).scale=1;
+  bull.get(aa).velocityX=-4;
+ 
+ //bill.add(createSprite(randomNumber(0, 55)*36, (randomNumber(0, 30)*36)+16));
+    bill.add(createSprite(150, 200));
+  bill.get(aa).setAnimation("bill");
+  bill.get(aa).scale=1.2;
+  bill.get(aa).bounciness=0;
+}
+
+var lak=createGroup();
+for (var sd = 0; sd < ty+1; sd++) {
+ lak.add(createSprite(200,800));
+  lak.get(sd).setAnimation("lakitu");
+  lak.get(sd).scale=1.5;
+}
+var spin=createGroup();
+for (var fg = 0; fg < cv+1; fg++) {
+ spin.add(createSprite(-2000,800));
+  spin.get(fg).setAnimation("spinyEgg");
+  spin.get(fg).scale=1.7;
+}
+
+var bloop=createGroup();
+for (var ap = 0; ap < lq+1; ap++) {
+  bloop.add(createSprite(200,800));
+  bloop.get(ap).setAnimation("blooper");
+  bloop.get(ap).scale=1.8;
+}
+
+var cheep=createGroup();
+for (var qo = 0; qo < zu+1; qo++) {
+  cheep.add(createSprite(200,800));
+  cheep.get(qo).setAnimation("cheep");
+  cheep.get(qo).scale=2;
+  cheep.get(qo).velocityX=-4;
+}
+
+var fire=createGroup();
+var fire2=createGroup();
+for (var er = 0; er < yb+1; er++) {
+ fire.add(createSprite(150,850));
+ fire2.add(createSprite(150,850));
+ fire.get(er).setAnimation("mar");
+ fire.get(er).scale=2.4;
+ fire.get(er).rotationSpeed=2.5;
+ fire2.get(er).setAnimation("ah1");
+ fire2.get(er).scale=2.4;
+}
+
+var plat=createGroup();
+var plat2=createGroup();
+for (var dd = 0; dd < po+1; dd++) {
+  //plat.add(createSprite(randomNumber(0, 55)*36, (randomNumber(0, 30)*36)+16));
+    plat.add(createSprite(200, dd*200));
+  plat.get(dd).setAnimation("platform");
+  plat.get(dd).scale=3;
+  plat2.add(createSprite(200, 800));
+  plat2.get(dd).setAnimation("con");
+  plat2.get(dd).visible=false;
+  plat2.get(dd).scale=2;
+}
+
+var spring=createGroup();
+for (var ll = 0; ll < op+1; ll++) {
+  spring.add(createSprite(200,800));
+  spring.get(ll).setAnimation("Spring");
+  spring.get(ll).scale=2;
+}
+
+var fireBall=createGroup();
+for (var pop = 0; pop < 2; pop++) {
+  fireBall.add(createSprite(-1000,0));
+  fireBall.get(pop).setAnimation("ballFire");
+  fireBall.get(pop).bounciness=0;
+  fireBall.get(pop).scale=2;
+}
+
+var flalg=createSprite(2060,938);
+flalg.setAnimation("flalg");
+flalg.scale=2;
+var castle=createSprite(2060,928);
+castle.setAnimation("castle");
+castle.scale=2.5;
+var dust=createSprite(200,200);
+dust.setAnimation("dust");
+dust.scale=3;
+dust.visible=false;
+var dust2=createSprite(200,200);
+dust2.setAnimation("dust2");
+dust2.scale=3;
+dust2.visible=false;
+var dust3=createSprite(200,200);
+dust3.setAnimation("dust3");
+dust3.scale=3;
+dust3.visible=false;
+var dust4=createSprite(200,200);
+dust4.setAnimation("dust4");
+dust4.scale=3;
+dust4.visible=false;
+
+var mar=createSprite(100,990);
+mar.setAnimation("mar");
+mar.scale=1.7;
+mar.bounciness=0;
+
+var loo=createSprite(0,3000);
+loo.setAnimation("mar2");
+loo.scale=2;
+loo.visible=false;
+var castle2=createSprite(2060,928);
+castle2.setAnimation("castle2");
+castle2.scale=2.5;
+var boom=createSprite(1850,900);
+boom.setAnimation("mar");
+boom.scale=7;
+boom.visible=false;
+boom.rotation=45;
+
+var mz=0;
+var rr=0;
+var gh=0;
+var jk=0;
+var vb=0;
+var co=0;
+
+var pipe=createGroup();
+var pipe3=createGroup();
+for (var up = 0; up < mz+1; up++) {
+  pipe.add(createSprite(200,970));
+  pipe.get(0).setAnimation("pipe2");
+  pipe.get(0).scale=2.88;
+  pipe3.add(createSprite(1700,800));
+  pipe3.get(0).setAnimation("pipe2");
+  pipe3.get(0).scale=2.88;
+}
+
+var con=createGroup();
+for (var vv = 0; vv < rr+1; vv++) {
+  con.add(createSprite(randomNumber(0, 55)*36, (randomNumber(0, 30)*36)+16));
+  con.get(vv).setAnimation("con");
+  con.get(vv).scale=2.25;
+}
+
+var thop=createGroup();
+var thop2=createGroup();
+for (var qa = 0; qa < gh+1; qa++) {
+thop.add(createSprite(100,800));
+thop.get(qa).setAnimation("thwomp");
+thop.get(qa).scale=2;
+thop2.add(createSprite(100,800));
+thop2.get(qa).setAnimation("con");
+thop2.get(qa).visible=false;
+}
+
+var ball=createGroup();
+var ball2=createGroup();
+for (var bn = 0; bn < jk+1; bn++) {
+ball.add(createSprite(100,800));
+ball.get(bn).setAnimation("ball");
+ball.get(bn).scale=1.5;
+ball2.add(createSprite(100,800));
+ball2.get(bn).setAnimation("ball2");
+ball2.get(bn).scale=4;
+ball2.get(bn).visible=true;
+}
+
+var liquid=createGroup();
+for (var xd = 0; xd < vb+1; xd++) {
+  liquid.add(createSprite(200,800));
+  liquid.get(xd).setAnimation("luvu");
+  liquid.get(xd).scale=4.5;
+}
+
+var bridge=createGroup();
+for (var dx = 0; dx < co+1; dx++) {
+  bridge.add(createSprite(200,800));
+  bridge.get(dx).setAnimation("Bridge");
+  bridge.get(dx).scale=3.429;
+}
+
+var button=createGroup();
+for (var press = 0; press < 5; press++) {
+  button.add(createSprite(350,600+(press*145)));
+  button.get(press).setAnimation("button");
+  button.get(press).scale=4.5;
+}
+button.get(4).x=80; button.get(4).y=675; button.get(4).setAnimation("titleScreen"); button.get(4).scale=2.5; button.get(4).height=350; button.get(4).width=525;
+
+var lava=createSprite(417, 1800);
+lava.setAnimation("lovo");
+lava.scale=3;
+var lava2=createSprite(1310, 1250);
+lava2.setAnimation("lovo");
+lava2.scale=6.5;
+lava2.rotation=270;
+lava2.visible=false;
+
+var title=createSprite(-1500,-1000);
+title.setAnimation("title");
+title.scale=2;
+
+var bowser=createSprite(-1000,800);
+bowser.setAnimation("bows");
+bowser.scale=1.5;
+var peach=createSprite(-1000,800);
+peach.setAnimation("petch");
+peach.scale=1;
+var car=createSprite(-1000,800);
+car.setAnimation("car");
+car.scale=1.2;
+
+var score=0;
+camera.zoom=0.7;
+var y=0;
+var s=0;
+var f=randomNumber(0,8);
+var w=0;
+var p=14;
+var m=0;
+var o=0;
+var t=3;
+var k=0;
+var h=0;
+var q=0;
+var e=24;
+var c=0;
+var g=0;
+var ewe=0;
+var yty=0;
+var tyt=0;
+var iop=0;
+var yyy=-1;
+var ww=0;
+var bbb=0;
+var timer=0;
+var gameMode=0;
+var level=0;
+var thing=false;
+var thing2=false;
+var thing3=false;
+var thing4=false;
+var thing5=false;
+var thing6=false;
+var thing7=false;
+var thing8=false;
+var thing9=false;
+var thing10=false;
+var thing11=false;
+var thing12=false;
+var thing13=false;
+var thing14=false;
+var thing15=false;
+var thing16=false;
+var thing17=false;
+var thing18=false;
+var thing19=false;
+var thing20=false;
+var thing21=false;
+var thing22=false;
+var thing23=false;
+var thing24=false;
+var thing25=false;
+var thing26=false;
+var thing27=false;
+var thing28=false;
+
+
+function draw() {
+//game mode selection, pre-set level geometry, menus, and cutscenes
+gameModes();
+
+if(level!=-1 && thing21===false){
+playerControl();
+}
+
+interactions();
+
+makerMode();
+
+otherThings();
+
+drawSprites();
+
+textAndWinCondition();
+}
+
+function interactions(){
+  //ground
+for (var i = 0; i < ff; i++) {
+  blo.get(i).setCollider("rectangle",0,0);
+  if(e==24 && tyt==1 && con.get(rr).isTouching(blo.get(i)) && mouseWentDown("leftButton")){
+    blo.get(i).x=blo.get(ff-1).x; blo.get(i).y=blo.get(ff-1).y; blo.get(i).bounciness=blo.get(ff-1).bounciness;
+    if(blo.get(ff-1).width<50){blo.get(i).setAnimation("Bloock")} if(blo.get(ff-1).width==108){blo.get(i).setAnimation("Bloock2")} if(blo.get(ff-1).width>500){blo.get(i).setAnimation("Bloock3")}
+    blo.get(ff-1).destroy(); ff=ff-1}
+ if(mar.isTouching(blo.get(i))){
+  if(mar.y>blo.get(i).y+25 && mar.velocityY<0){mar.y=mar.y+13; mar.velocityY=10.01}
+  mar.bounceOff(blo.get(i))}
+  if(blo.get(i).bounciness==1){blo.get(i).setFrame(0)}
+  if(blo.get(i).bounciness==0.5){blo.get(i).setFrame(1)}
+  if(blo.get(i).bounciness==0.25){blo.get(i).setFrame(2)}
+  if(blo.get(i).bounciness==0.125){blo.get(i).setFrame(3)}
+  if(blo.get(i).bounciness==0.0625){blo.get(i).setFrame(4)}
+  if(blo.get(i).bounciness==2){blo.get(i).setFrame(5)}
+}
+
+//semi-solid platform
+for (var we = 0; we < nm; we++) {
+  blo2.get(we).setCollider("rectangle",0,-52.5,15,15);
+  if(e==24 && tyt==1 && con.get(rr).isTouching(blo2.get(we)) && mouseWentDown("leftButton")){
+    blo2.get(we).x=blo2.get(nm-1).x; blo2.get(we).y=blo2.get(nm-1).y; blo2.get(we).bounciness=blo2.get(nm-1).bounciness;
+    if(blo2.get(nm-1).scale==2.4){blo2.get(we).setAnimation("YES")} if(blo2.get(we).scale==2.3999){blo2.get(we).setAnimation("YES2")} if(blo2.get(we).scale==2.398){blo2.get(we).setAnimation("YES3")}
+    blo2.get(nm-1).destroy(); nm=nm-1}
+  if(mar.isTouching(blo2.get(we)) && mar.y>blo2.get(we).y-95){mar.velocityY=10.02; mar.y=mar.y+5}
+  if(mar.isTouching(blo2.get(we))){mar.bounceOff(blo2.get(we))}
+ if(blo2.get(we).bounciness==1){blo2.get(we).setFrame(0)}
+ if(blo2.get(we).bounciness==0.5){blo2.get(we).setFrame(1)}
+ if(blo2.get(we).bounciness==0.25){blo2.get(we).setFrame(2)}
+ if(blo2.get(we).bounciness==0.125){blo2.get(we).setFrame(3)}
+}
+
+
+//Brick Block and Vine
+if(ww===0){ww=1}else{ww=0}
+for (var mm = 0; mm < j; mm++) {
+  bla.get(mm).setCollider("rectangle",0,0,15,15);
+  if(e==24 && tyt==1 && con.get(rr).isTouching(bla.get(mm)) && mouseWentDown("leftButton")){
+    bla.get(mm).x=bla.get(j-1).x; bla.get(mm).y=bla.get(j-1).y; bla.get(mm).bounciness=bla.get(j-1).bounciness; bla.get(mm).scale=bla.get(j-1).scale; if(vine.get(j-1).visible===true){vine.get(mm).visible=true} else{vine.get(mm).visible=false} vine.get(mm).scale=vine.get(j-1).scale; vine.get(mm).x=vine.get(j-1).x; vine.get(mm).y=vine.get(j-1).y; vine.get(mm).velocityY=vine.get(j-1).velocityY;
+    bla.get(j-1).destroy(); vine.get(j-1).destroy(); j=j-1}
+ if(bla.get(mm).scale==2.39){bla.get(mm).setAnimation("ah1"); if(bla.get(mm).bounciness==1){bla.get(mm).setFrame(0)} if(bla.get(mm).bounciness==0.9){bla.get(mm).setFrame(2)} if(bla.get(mm).bounciness==0.8){bla.get(mm).setFrame(3)}}
+ if(bla.get(mm).scale>2.39){ if(bla.get(mm).bounciness==1){bla.get(mm).setAnimation("blok")} if(bla.get(mm).bounciness==0.9){bla.get(mm).setAnimation("blok2")} if(bla.get(mm).bounciness==0.8){bla.get(mm).setAnimation("blok3")}}
+ if(bla.get(mm).bounciness==0.7){if(bla.get(mm).scale!=2.39){bla.get(mm).visible=false} else{bla.get(mm).visible=true; bla.get(mm).bounciness=1}}
+ if(mar.isTouching(bla.get(mm)) && (bla.get(mm).scale>=2.39)){
+  if(mar.y>bla.get(mm).y+25 && mar.velocityY<0){if(mar.x>bla.get(mm).x-20 && mar.x<bla.get(mm).x+20){mar.y=mar.y+13; mar.velocityY=10.01} else{if(mar.x>bla.get(mm).x){mar.x=mar.x+13} else{mar.x=mar.x-13}}}
+  if(bla.get(mm).visible===true){mar.bounceOff(bla.get(mm))}
+  if(mar.velocityY==10.01 && mar.y>bla.get(mm).y){
+   if(bla.get(mm).scale==2.4){if(thing16===true || thing===true){bla.get(mm).scale=2.38; if(bla.get(mm).bounciness==1){bla.get(mm).setAnimation("block")} if(bla.get(mm).bounciness==0.9){bla.get(mm).setAnimation("block2")} if(bla.get(mm).bounciness==0.8){bla.get(mm).setAnimation("block3")}} else{bla.get(mm).setAnimation("mar"); if(bla.get(mm).bounciness==1){bla.get(mm).setAnimation("blok")} if(bla.get(mm).bounciness==0.9){bla.get(mm).setAnimation("blok2")} if(bla.get(mm).bounciness==0.8){bla.get(mm).setAnimation("blok3")}}}
+   if(bla.get(mm).scale==2.399){bla.get(mm).scale=2.39; vine.get(mm).scale=2.4}
+   if(bla.get(mm).scale==2.401 ||(bla.get(mm).scale<=2.398 && bla.get(mm).scale>2.3901)){if(bla.get(mm).scale==2.401 || (bla.get(mm).scale<2.391 && bla.get(mm).scale>2.3901)){bla.get(mm).scale=2.39} bla.get(mm).setAnimation("mar"); if(bla.get(mm).bounciness==1){bla.get(mm).setAnimation("blok")} if(bla.get(mm).bounciness==0.9){bla.get(mm).setAnimation("blok2")} if(bla.get(mm).bounciness==0.8){bla.get(mm).setAnimation("blok3")} var coin=createSprite(bla.get(mm).x,bla.get(mm).y-40); coin.setAnimation("coin"); coin.scale=2; score=score+200}
+   if(bla.get(mm).scale==2.398){bla.get(mm).scale=2.397}}}
+   if(bla.get(mm).scale<=2.397 && bla.get(mm).scale>2.391){bla.get(mm).scale=bla.get(mm).scale-0.00005}
+ 
+  if(vine.get(mm).scale==2.4 && vine.get(mm).y>bla.get(mm).y-343 && !vine.get(mm).isTouching(blu)){vine.get(mm).velocityY=-3}
+  else{vine.get(mm).velocityY=0}
+  if(vine.get(mm).y<bla.get(mm).y+340){
+   if(vine.get(mm).velocityY===0){vine.get(mm).pause()}
+   else{vine.get(mm).play()}}
+  if(vine.get(mm).scale==2.3){vine.get(mm).setAnimation("mar"); vine.get(mm).setAnimation("vine")}
+  else{vine.get(mm).visible=true}
+  
+ if(mar.isTouching(vine.get(mm)) && mar.y<bla.get(mm).y-35 && keyWentDown("up") && vine.get(mm).visible===true){thing7=true; if(mar.x>vine.get(mm).x){mar.x=vine.get(mm).x+10; if(thing===false){if(thing16===false){mar.setAnimation("grab2")} else{mar.setAnimation("2grab2")}} else{mar.setAnimation("grab4")}} else{mar.x=vine.get(mm).x-10; if(thing===false){if(thing16===false){mar.setAnimation("grab")} else{mar.setAnimation("2grab")}} else{mar.setAnimation("grab3")}}}
+ if(thing7===true && mar.isTouching(vine.get(mm))){
+  mar.velocityX=0; mar.velocityY=0;
+  if(!keyDown("up") && !keyDown("down")){mar.setFrame(0)}
+  if(keyWentDown("left")){if(mar.x>vine.get(mm).x){if(thing===false){if(thing16===false){mar.setAnimation("grab")} else{mar.setAnimation("2grab")}} else{mar.setAnimation("grab3")} mar.x=vine.get(mm).x-10} else{thing7=false}}
+  if(keyWentDown("right")){if(mar.x<vine.get(mm).x){if(thing===false){if(thing16===false){mar.setAnimation("grab2")} else{mar.setAnimation("2grab2")}} else{mar.setAnimation("grab4")} mar.x=vine.get(mm).x+10} else{thing7=false}}
+  if(keyDown("up")){mar.velocityY=-2.6} if(keyDown("down")){mar.velocityY=2.6}
+  if(mar.y<bla.get(mm).y-710){mar.y=bla.get(mm).y-710}}
+}
+
+//Regular Block
+for (var cc = 0; cc < kk; cc++) {
+  blu.get(cc).setCollider("rectangle",0,0);
+  if(e==24 && tyt==1 && con.get(rr).isTouching(blu.get(cc)) && mouseWentDown("leftButton")){
+    blu.get(cc).x=blu.get(kk-1).x; blu.get(cc).y=blu.get(kk-1).y; blu.get(cc).bounciness=blu.get(kk-1).bounciness;
+    blu.get(kk-1).destroy(); kk=kk-1}
+  if(mar.isTouching(blu.get(cc))){
+  if(mar.y>blu.get(cc).y+25 && mar.velocityY<0){if(mar.x>blu.get(cc).x-20 && mar.x<blu.get(cc).x+20){mar.y=mar.y+13; mar.velocityY=10.01} else{if(mar.x>blu.get(cc).x){mar.x=mar.x+13} else{mar.x=mar.x-13}}}
+  mar.bounceOff(blu.get(cc))}
+  if(blu.get(cc).bounciness==1){blu.get(cc).setFrame(0)}
+  if(blu.get(cc).bounciness==0.9){blu.get(cc).setFrame(1)}
+  if(blu.get(cc).bounciness==0.8){blu.get(cc).setFrame(2)}
+  if(blu.get(cc).bounciness==0.7){blu.get(cc).setFrame(3)}
+}
+
+//Question Block and Mushroom and Fire Flower and StarMan
+for (var hh = 0; hh < d; hh++) {
+    ble.get(hh).setCollider("rectangle",0,0);
+    mush.get(hh).setCollider("rectangle",0,0);
+    if(e==24 &&  tyt==1 && con.get(rr).isTouching(ble.get(hh)) && mouseWentDown("leftButton")){
+    ble.get(hh).x=ble.get(d-1).x; ble.get(hh).y=ble.get(d-1).y; ble.get(hh).bounciness=ble.get(d-1).bounciness; ble.get(hh).scale=ble.get(d-1).scale; 
+    if(mush.get(d-1).visible===true){mush.get(hh).visible=true} else{mush.get(hh).visible=false} mush.get(hh).scale=mush.get(d-1).scale; mush.get(hh).x=mush.get(d-1).x; mush.get(hh).y=mush.get(d-1).y; mush.get(hh).velocityY=mush.get(d-1).velocityY; mush.get(hh).velocityX=mush.get(d-1).velocityX;
+    if(flower.get(d-1).visible===true){flower.get(hh).visible=true} else{flower.get(hh).visible=false} flower.get(hh).scale=flower.get(d-1).scale; flower.get(hh).x=flower.get(d-1).x; flower.get(hh).y=flower.get(d-1).y; flower.get(hh).velocityY=flower.get(d-1).velocityY;
+    ble.get(d-1).destroy(); mush.get(d-1).destroy(); flower.get(d-1).destroy(); d=d-1}
+ if(ble.get(hh).scale==2.39){ble.get(hh).setAnimation("ah1")} else{ble.get(hh).setAnimation("ah")}
+ if(ble.get(hh).bounciness==1){ble.get(hh).setFrame(0)} if(ble.get(hh).bounciness==0.9){ble.get(hh).setFrame(1)} if(ble.get(hh).bounciness==0.8){ble.get(hh).setFrame(3)}
+ if(mar.isTouching(ble.get(hh))){
+  if(mar.y>ble.get(hh).y+25 && mar.velocityY<0){if(mar.x>ble.get(hh).x-20 && mar.x<ble.get(hh).x+20){mar.y=mar.y+13; mar.velocityY=10.01} else{if(mar.x>ble.get(hh).x){mar.x=mar.x+13} else{mar.x=mar.x-13}}}
+  mar.bounceOff(ble.get(hh));
+  if(mar.velocityY==10.01 && ble.get(hh).scale==2.4){ble.get(hh).scale=2.39; ble.get(hh).setAnimation("ah1"); mush.get(hh).visible=true}
+  if(mar.velocityY==10.01 && (ble.get(hh).scale==2.399 ||(ble.get(hh).scale<=2.398 && ble.get(hh).scale>2.3901))){if(ble.get(hh).scale==2.399 ||(ble.get(hh).scale<=2.391 && ble.get(hh).scale>2.3901)){ble.get(hh).scale=2.39} var coin=createSprite(ble.get(hh).x,ble.get(hh).y-40); coin.setAnimation("coin"); coin.scale=2; score=score+200}
+  if(mar.velocityY==10.01 && ble.get(hh).scale==2.398){ble.get(hh).scale=2.397}
+  if(mar.velocityY==10.01 && ble.get(hh).scale==2.401){ble.get(hh).scale=2.39; flower.get(hh).visible=true}
+  if(mar.velocityY==10.01 && ble.get(hh).scale==2.402){ble.get(hh).scale=2.39; star.get(hh).visible=true}}
+  if(ble.get(hh).scale<=2.397 && ble.get(hh).scale>2.391){ble.get(hh).scale=ble.get(hh).scale-0.00005}
+ 
+  if(flower.get(hh).visible===true){if(flower.get(hh).isTouching(ble.get(hh))){flower.get(hh).velocityY=-3} else{flower.get(hh).velocityY=0}
+  if(mar.isTouching(flower.get(hh))){flower.get(hh).y=5000; thing=true; score=score+1000}}
+  
+  if(star.get(hh).visible===true){if(star.get(hh).isTouching(ble.get(hh)) && star.get(hh).scale==1.8){star.get(hh).velocityY=-3}
+  else{star.get(hh).velocityY=star.get(hh).velocityY+0.5; star.get(hh).scale=1.81;
+    if(star.get(hh).isTouching(bla) || star.get(hh).isTouching(ble) || star.get(hh).isTouching(blu) || star.get(hh).isTouching(pipe) || star.get(hh).isTouching(pipe2) || star.get(hh).isTouching(pipe3) || star.get(hh).isTouching(bill) || star.get(hh).isTouching(blo) || star.get(hh).isTouching(blo2) || star.get(hh).isTouching(plat) || star.get(hh).isTouching(fire2) || star.get(hh).isTouching(bridge)){
+      star.get(hh).bounceOff(bla); star.get(hh).bounceOff(ble); star.get(hh).bounceOff(blu); star.get(hh).bounceOff(pipe); star.get(hh).bounceOff(pipe2); star.get(hh).bounceOff(pipe3); star.get(hh).bounceOff(bill); star.get(hh).bounceOff(blo); star.get(hh).bounceOff(blo2); star.get(hh).bounceOff(plat); star.get(hh).bounceOff(fire2); star.get(hh).bounceOff(bridge); star.get(hh).velocityY=-10}
+  if(star.get(hh).velocityX<1 && star.get(hh).velocityX>-1){star.get(hh).velocityX=(ww-0.5)*7}
+  if(mar.isTouching(star.get(hh))){star.get(hh).y=5000; thing11=true; score=score+1000}}}
+  
+  if(mush.get(hh).visible===true){
+    if(mush.get(hh).scale<1.9){if(mush.get(hh).bounciness===0){mush.get(hh).setFrame(0)} else{mush.get(hh).setFrame(1)}}
+    if(mush.get(hh).isTouching(ble.get(hh))){mush.get(hh).y=mush.get(hh).y-3}
+    else{mush.get(hh).velocityY=mush.get(hh).velocityY+0.5;
+    if((mush.get(hh).isTouching(bla) || mush.get(hh).isTouching(ble) || mush.get(hh).isTouching(blu) || mush.get(hh).isTouching(pipe) || mush.get(hh).isTouching(pipe2) || mush.get(hh).isTouching(pipe3) || mush.get(hh).isTouching(bill) || mush.get(hh).isTouching(blo) || mush.get(hh).isTouching(blo2) || mush.get(hh).isTouching(plat) || mush.get(hh).isTouching(fire2) || mush.get(hh).isTouching(bridge)) && mush.get(hh).scale<1.9){
+      mush.get(hh).bounceOff(bla); mush.get(hh).bounceOff(ble); mush.get(hh).bounceOff(blu); mush.get(hh).bounceOff(pipe); mush.get(hh).bounceOff(pipe2); mush.get(hh).bounceOff(pipe3); mush.get(hh).bounceOff(bill); mush.get(hh).bounceOff(blo); mush.get(hh).bounceOff(blo2); mush.get(hh).bounceOff(plat); mush.get(hh).bounceOff(bridge); mush.get(hh).bounceOff(fire2)}}
+   if(mush.get(hh).velocityX===0 && !mush.get(hh).isTouching(ble.get(hh)) && mush.get(hh).scale<1.9){
+     if(ww==1){mush.get(hh).velocityX=2}
+     if(ww===0){mush.get(hh).velocityX=-2}}
+    if(mar.isTouching(mush.get(hh)) && mush.get(hh).scale<1.9){if(mush.get(hh).bounciness===0){thing16=true; score=score+1000} else{t=t+1; mush.get(hh).scale=2; mush.get(hh).velocityY=-3; mush.get(hh).velocityX=0} if(mush.get(hh).bounciness===0 || mush.get(hh).scale==1){mush.get(hh).visible=false}}
+   if(mush.get(hh).scale>1.9){mush.get(hh).setFrame(2); if(mush.get(hh).velocityY>0){mush.get(hh).visible=false}}
+  }
+}
+
+//pipe
+for (var up = 0; up < mz; up++) {
+  pipe.get(up).setCollider("rectangle",0,0);
+  pipe3.get(up).setCollider("rectangle",0,0);
+    if(e==24 && tyt==1 && (con.get(rr).isTouching(pipe.get(up)) || con.get(rr).isTouching(pipe3.get(up))) && mouseWentDown("leftButton")){
+    pipe.get(up).x=pipe.get(mz-1).x; pipe.get(up).y=pipe.get(mz-1).y; pipe.get(up).bounciness=pipe.get(mz-1).bounciness; pipe.get(up).rotation=pipe.get(mz-1).rotation;
+    pipe3.get(up).x=pipe3.get(mz-1).x; pipe3.get(up).y=pipe3.get(mz-1).y; pipe3.get(up).bounciness=pipe3.get(mz-1).bounciness; pipe3.get(up).rotation=pipe3.get(mz-1).rotation;
+    if(pipe.get(mz-1).mirrorX()!=pipe.get(up).mirrorX()){pipe.get(up).mirrorX(pipe.get(up).mirrorX()*-1)} if(pipe.get(mz-1).mirrorY()!=pipe.get(up).mirrorY()){pipe.get(up).mirrorY(pipe.get(up).mirrorY()*-1)}
+    if(pipe3.get(mz-1).mirrorX()!=pipe3.get(up).mirrorX()){pipe3.get(up).mirrorX(pipe3.get(up).mirrorX()*-1)} if(pipe3.get(mz-1).mirrorY()!=pipe3.get(up).mirrorY()){pipe3.get(up).mirrorY(pipe3.get(up).mirrorY()*-1)}
+    pipe.get(mz-1).destroy(); pipe3.get(mz-1).destroy(); mz=mz-1}
+  
+  if(pipe.get(up).bounciness==1){pipe.get(up).setFrame(0); pipe3.get(up).setFrame(0)}
+  if(pipe.get(up).bounciness==0.5){pipe.get(up).setFrame(1); pipe3.get(up).setFrame(1)}
+  if(pipe.get(up).bounciness===0){pipe.get(up).setFrame(2); pipe3.get(up).setFrame(2)}
+  if(pipe.get(up).bounciness==1.5){pipe.get(up).setFrame(3); pipe3.get(up).setFrame(3)}
+  
+  if(pipe.get(up).rotation===0 && (bbb<2 || pipe.get(up).scale==2.881) && mar.isTouching(pipe.get(up)) && mar.x>pipe.get(up).x-10 && mar.x<pipe.get(up).x+10 && keyWentDown("down")){thing9=true; mar.velocityY=3}
+  if(pipe.get(up).rotation==90 && (bbb<2 || pipe.get(up).scale==2.881) && mar.isTouching(pipe.get(up)) && mar.y>pipe.get(up).y-10 && mar.y<pipe.get(up).y+20 && keyDown("left")){thing9=true; mar.velocityX=-3}
+  if(pipe.get(up).rotation==180 && (bbb<2 || pipe.get(up).scale==2.881) && mar.isTouching(pipe.get(up)) && mar.x>pipe.get(up).x-10 && mar.x<pipe.get(up).x+10 && keyDown("up")){thing9=true; mar.velocityY=-3}
+  if(pipe.get(up).rotation==270 && (bbb<2 || pipe.get(up).scale==2.881) && mar.isTouching(pipe.get(up)) && mar.y>pipe.get(up).y-10 && mar.y<pipe.get(up).y+20 && keyDown("right")){thing9=true; mar.velocityX=3}
+  
+  if(pipe3.get(up).rotation===0 && (bbb<2 || pipe3.get(up).scale==2.881) && mar.isTouching(pipe3.get(up)) && mar.x>pipe3.get(up).x-10 && mar.x<pipe3.get(up).x+10 && keyWentDown("down")){thing9=true; mar.velocityY=3}
+  if(pipe3.get(up).rotation==90 && (bbb<2 || pipe3.get(up).scale==2.881) && mar.isTouching(pipe3.get(up)) && mar.y>pipe3.get(up).y-10 && mar.y<pipe3.get(up).y+20 && keyDown("left")){thing9=true; mar.velocityX=-3}
+  if(pipe3.get(up).rotation==180 && (bbb<2 || pipe3.get(up).scale==2.881) && mar.isTouching(pipe3.get(up)) && mar.x>pipe3.get(up).x-10 && mar.x<pipe3.get(up).x+10 && keyDown("up")){thing9=true; mar.velocityY=-3}
+  if(pipe3.get(up).rotation==270 && (bbb<2 || pipe3.get(up).scale==2.881) && mar.isTouching(pipe3.get(up)) && mar.y>pipe3.get(up).y-10 && mar.y<pipe3.get(up).y+20 && keyDown("right")){thing9=true; mar.velocityX=3}
+ 
+  if(mar.isTouching(pipe.get(up)) && thing9===false){if(mar.y>pipe.get(up).y+90 && (pipe.get(up).rotation===0 || pipe.get(up).rotation==180) || (mar.y>pipe.get(up).y+35 && (pipe.get(up).rotation==90 || pipe.get(up).rotation==270))){mar.y=mar.y+13; mar.velocityY=10.02} mar.bounceOff(pipe.get(up))}
+  if(mar.isTouching(pipe3.get(up)) && thing9===false){if(mar.y>pipe3.get(up).y+90 && (pipe3.get(up).rotation===0 || pipe3.get(up).rotation==180) || (mar.y>pipe3.get(up).y+35 && (pipe3.get(up).rotation==90 || pipe3.get(up).rotation==270))){mar.y=mar.y+13; mar.velocityY=10.02} mar.bounceOff(pipe3.get(up))}
+  
+  if(thing9===true){thing3=false; bbb=bbb+1} else{bbb=0; if(pipe.get(up).scale==2.881){pipe.get(up).scale=2.87; pipe3.get(up).scale=2.88}}
+  if(bbb>100){bbb=24}
+  if(bbb==1){if(mar.isTouching(pipe.get(up)) || mar.isTouching(pipe3.get(up))){pipe.get(up).scale=2.881; pipe3.get(up).scale=2.881}}
+  if(bbb<25 && pipe.get(up).scale==2.881){if(mar.isTouching(pipe.get(up))){if(pipe.get(up).rotation===0 || pipe.get(up).rotation==180){mar.velocityX=0} else{mar.velocityY=0.001}}}
+  if(bbb<25 && pipe3.get(up).scale==2.881){if(mar.isTouching(pipe3.get(up))){if(pipe3.get(up).rotation===0 || pipe3.get(up).rotation==180){mar.velocityX=0} else{mar.velocityY=0.001}}}
+  if(bbb>25 && pipe.get(up).scale==2.881){if(mar.isTouching(pipe.get(up))){if(pipe.get(up).rotation===0 || pipe.get(up).rotation==180){mar.velocityX=0} else{mar.velocityY=0.001}}}
+  if(bbb>25 && pipe3.get(up).scale==2.881){if(mar.isTouching(pipe3.get(up))){if(pipe3.get(up).rotation===0 || pipe3.get(up).rotation==180){mar.velocityX=0} else{mar.velocityY=0.001}}}
+  if(bbb==25 && mar.isTouching(pipe.get(up))){mar.x=pipe3.get(up).x; mar.y=pipe3.get(up).y}
+  if(bbb==25 && mar.isTouching(pipe3.get(up)) && mar.y!=pipe3.get(up).y){mar.x=pipe.get(up).x; mar.y=pipe.get(up).y}
+ 
+  if(bbb>25){
+    if((pipe.get(up).rotation===0 && mar.isTouching(pipe.get(up)) && pipe.get(up).scale==2.881) || (pipe3.get(up).rotation===0 && mar.isTouching(pipe3.get(up)) && pipe3.get(up).scale==2.881)){mar.velocityY=-3}
+    if((pipe.get(up).rotation===90 && mar.isTouching(pipe.get(up)) && pipe.get(up).scale==2.881) || (pipe3.get(up).rotation==90 && mar.isTouching(pipe3.get(up)) && pipe3.get(up).scale==2.881)){mar.velocityX=3}
+    if((pipe.get(up).rotation==180 && mar.isTouching(pipe.get(up)) && pipe.get(up).scale==2.881) || (pipe3.get(up).rotation==180 && mar.isTouching(pipe3.get(up)) && pipe3.get(up).scale==2.881)){mar.velocityY=3}
+    if((pipe.get(up).rotation==270 && mar.isTouching(pipe.get(up)) && pipe.get(up).scale==2.881) || (pipe3.get(up).rotation==270 && mar.isTouching(pipe3.get(up)) && pipe3.get(up).scale==2.881)){mar.velocityX=-3}}
+  if(thing9===true){thing19=false}
+  if(pipe.get(up).scale==2.881){if(!mar.isTouching(pipe.get(up)) && !mar.isTouching(pipe3.get(up))){thing9=false}}
+}
+
+
+//pipe2 and Piranha Plant
+ for (var bb = 0; bb < zz; bb++) {
+   pipe2.get(bb).setCollider("rectangle",0,0);
+  if(e==24 && tyt==1 && con.get(rr).isTouching(pipe2.get(bb)) && mouseWentDown("leftButton")){
+    pipe2.get(bb).x=pipe2.get(zz-1).x; pipe2.get(bb).y=pipe2.get(zz-1).y; pipe2.get(bb).bounciness=pipe2.get(zz-1).bounciness; pipe2.get(bb).rotation=pipe2.get(zz-1).rotation;
+    plant.get(bb).x=plant.get(zz-1).x; plant.get(bb).y=plant.get(zz-1).y; plant.get(bb).bounciness=plant.get(zz-1).bounciness; plant.get(bb).rotation=plant.get(zz-1).rotation; plant.get(bb).velocityY=plant.get(zz-1).velocityY; plant.get(bb).velocityX=plant.get(zz-1).velocityX;
+    if(pipe2.get(zz-1).mirrorX()!=pipe2.get(bb).mirrorX()){pipe2.get(bb).mirrorX(pipe2.get(bb).mirrorX()*-1)} if(pipe2.get(zz-1).mirrorY()!=pipe2.get(bb).mirrorY()){pipe2.get(bb).mirrorY(pipe2.get(bb).mirrorY()*-1)}
+    pipe2.get(zz-1).destroy(); plant.get(zz-1).destroy(); zz=zz-1}
+if(mar.isTouching(pipe2.get(bb))){if(mar.y>pipe2.get(bb).y+90 && (pipe2.get(bb).rotation===0 || pipe2.get(bb).rotation==180) || (mar.y>pipe2.get(bb).y+35 && (pipe2.get(bb).rotation==90 || pipe2.get(bb).rotation==270))){mar.y=mar.y+13; mar.velocityY=10.02} mar.bounceOff(pipe2)}
+if(pipe2.get(bb).bounciness==1){pipe2.get(bb).setFrame(0)}
+if(pipe2.get(bb).bounciness==0.5){pipe2.get(bb).setFrame(1)}
+if(pipe2.get(bb).bounciness===0){pipe2.get(bb).setFrame(2)}
+if(pipe2.get(bb).bounciness==1.5){pipe2.get(bb).setFrame(3)}
+plant.get(bb).setCollider("rectangle",0,10);
+if(mar.isTouching(plant.get(bb)) && plant.get(bb).visible===true &&thing11===false){thing3=true}
+if((plant.get(bb).isTouching(fireBall) || (plant.get(bb).isTouching(mar) && thing11===true)) && plant.get(bb).visible===true){plant.get(bb).visible=false; score=score+100}
+
+  if(pipe2.get(bb).rotation===0){
+   if(plant.get(bb).y<pipe2.get(bb).y-110 || plant.get(bb).y>pipe2.get(bb).y){plant.get(bb).velocityY=0}}
+ if(pipe2.get(bb).rotation==90){
+   if(plant.get(bb).x>pipe2.get(bb).x+110 || plant.get(bb).x<pipe2.get(bb).x){plant.get(bb).velocityX=0}}
+ if(pipe2.get(bb).rotation==180){
+    if(plant.get(bb).y>pipe2.get(bb).y+110 || plant.get(bb).y<pipe2.get(bb).y){plant.get(bb).velocityY=0}}
+ if(pipe2.get(bb).rotation==270){
+  if(plant.get(bb).x<pipe2.get(bb).x-110 || plant.get(bb).x>pipe2.get(bb).x){plant.get(bb).velocityX=0}}
+
+if(World.frameCount/100==Math.round(World.frameCount/100)){
+ if(pipe2.get(bb).rotation===0){
+   if(plant.get(bb).y>=pipe2.get(bb).y+2){plant.get(bb).velocityY=-2} else{plant.get(bb).velocityY=2}}
+ if(pipe2.get(bb).rotation==90){
+   if(plant.get(bb).x<=pipe2.get(bb).x-2){plant.get(bb).velocityX=2} else{plant.get(bb).velocityX=-2}}
+ if(pipe2.get(bb).rotation==180){
+   if(plant.get(bb).y<=pipe2.get(bb).y-2){plant.get(bb).velocityY=2} else{plant.get(bb).velocityY=-2}}
+ if(pipe2.get(bb).rotation==270){
+   if(plant.get(bb).x>=pipe2.get(bb).x+2){plant.get(bb).velocityX=-2} else{plant.get(bb).velocityX=2}}
+}}
+
+
+//coin
+for (var vv = 0; vv < rr; vv++) {
+ if(mar.isTouching(con.get(vv)) && ewe!=1 && con.get(vv).visible===true){score=score+200; con.get(vv).visible=false}}
+
+//goomba interactions
+for (var ss = 0; ss < tt; ss++) {
+  goo.get(ss).setCollider("rectangle",0,0);
+ if(goo.get(ss).x<camera.x+450 && goo.get(ss).x>camera.x-450 && goo.get(ss).y<camera.y+450 && goo.get(ss).y>camera.y-450){ 
+  goo.get(ss).velocityY=goo.get(ss).velocityY+0.5;
+  if((goo.get(ss).isTouching(fireBall) || (goo.get(ss).isTouching(mar)) && thing11===true) && goo.get(ss).scale>0){goo.get(ss).scale=-2.2; score=score+100}
+  if(mar.isTouching(goo.get(ss))){
+   if(mar.y<goo.get(ss).y-20 && thing11===false){goo.get(ss).setAnimation("gom"); if(keyDown("up")){mar.velocityY=1.3} else{mar.velocityY=-10.01} score=score+100}
+   else{if(goo.get(ss).height>15 && thing11===false){thing3=true}}}
+  if(goo.get(ss).isTouching(blo)){if(goo.get(ss).height==20){goo.get(ss).bounceOff(blo); goo.get(ss).velocityY=0}}
+  if((goo.get(ss).isTouching(blo) || goo.get(ss).isTouching(bla) || goo.get(ss).isTouching(ble) || goo.get(ss).isTouching(blu) || goo.get(ss).isTouching(pipe) || goo.get(ss).isTouching(pipe2) || goo.get(ss).isTouching(pipe3) || goo.get(ss).isTouching(koop) || goo.get(ss).isTouching(bill) || goo.get(ss).isTouching(castle) || goo.get(ss).isTouching(blo2) || goo.get(ss).isTouching(plat) || goo.get(ss).isTouching(fire2) || goo.get(ss).isTouching(bridge)) && goo.get(ss).scale>0){
+    goo.get(ss).bounceOff(blo); goo.get(ss).bounceOff(bla); goo.get(ss).bounceOff(ble); goo.get(ss).bounceOff(blu); goo.get(ss).bounceOff(pipe); goo.get(ss).bounceOff(pipe2); goo.get(ss).bounceOff(pipe3); goo.get(ss).bounceOff(bill); goo.get(ss).bounceOff(castle); goo.get(ss).bounceOff(blo2); goo.get(ss).bounceOff(plat); goo.get(ss).bounceOff(fire2); goo.get(ss).bounceOff(bridge)}
+  if(goo.get(ss).isTouching(spring)){goo.get(ss).velocityY=-10.01}
+  }
+else{if(goo.get(ss).velocityX==2){goo.get(ss).x=goo.get(ss).x-2} else{goo.get(ss).x=goo.get(ss).x+2}}
+if(ww==1 && goo.get(ss).velocityX===0){goo.get(ss).velocityX=2}
+if(ww===0 && goo.get(ss).velocityX===0){goo.get(ss).velocityX=-2}
+ if(goo.get(ss).height<15){if(goo.get(ss).bounciness===0){goo.get(ss).setFrame(0)} if(goo.get(ss).bounciness===0.001){goo.get(ss).setFrame(1)} if(goo.get(ss).bounciness===0.01){goo.get(ss).setFrame(2)}}
+}
+ 
+ 
+//koopa interactions
+for (var yy = 0; yy < qq; yy++) {
+ if(koop.get(yy).scale<2.3){koop.get(yy).setCollider("rectangle",0,0)}
+ else{if(koop.get(yy).bounciness<0.02){koop.get(yy).setCollider("rectangle",0,0,16,12)}}
+  if(koop.get(yy).scale>2.18 || koop.get(yy).scale<0){koop.get(yy).velocityY=koop.get(yy).velocityY+0.5}
+  if(((koop.get(yy).isTouching(fireBall) && koop.get(yy).bounciness<0.02) || (koop.get(yy).isTouching(mar)) && thing11===true) && koop.get(yy).scale>0){koop.get(yy).scale=koop.get(yy).scale*-1; score=score+100}
+  if(koop.get(yy).scale<0){koop.get(yy).velocityX=0}
+  
+  if(mar.isTouching(koop.get(yy)) && thing11===false){
+   if(mar.y<koop.get(yy).y-20 && koop.get(yy).scale>0){koop.get(yy).setAnimation("koopa"); mar.y=mar.y-10;
+    if(koop.get(yy).scale==2.2 || koop.get(yy).scale==2.3){koop.get(yy).velocityX=0.00001} if(koop.get(yy).scale==2.301){if(mar.x<koop.get(yy).x){koop.get(yy).velocityX=10} else{koop.get(yy).velocityX=-10}}
+    if(koop.get(yy).scale==2.19 || koop.get(yy).scale<=2.18){koop.get(yy).scale=2.2}
+    if(koop.get(yy).velocityX==0.00001){koop.get(yy).scale=2.301} if(koop.get(yy).velocityX==10 ||koop.get(yy).velocityX==-10){koop.get(yy).scale=2.3}
+    if(keyDown("up")){mar.velocityY=1.3; mar.y=mar.y-10} else{mar.velocityY=-10.03} score=score+100}
+   else{if(koop.get(yy).velocityX!==0.00001){thing3=true} else{if(mar.x<koop.get(yy).x){koop.get(yy).velocityX=10; koop.get(yy).x=koop.get(yy).x+10} else{koop.get(yy).velocityX=-10; koop.get(yy).x=koop.get(yy).x-10}}}}
+   
+if(koop.get(yy).isTouching(blo) && koop.get(yy).scale>2.18){koop.get(yy).bounceOff(blo); koop.get(yy).velocityY=0}
+  if((koop.get(yy).scale>2.18) && (koop.get(yy).isTouching(bla) || koop.get(yy).isTouching(ble) || koop.get(yy).isTouching(blu) || koop.get(yy).isTouching(pipe) || koop.get(yy).isTouching(pipe2) || koop.get(yy).isTouching(pipe3) || koop.get(yy).isTouching(goo) || koop.get(yy).isTouching(bill) || koop.get(yy).isTouching(castle) || koop.get(yy).isTouching(blo2) || koop.get(yy).isTouching(plat) || koop.get(yy).isTouching(fire2) || koop.get(yy).isTouching(bridge))){
+    koop.get(yy).bounceOff(bla); koop.get(yy).bounceOff(ble); koop.get(yy).bounceOff(blu); koop.get(yy).bounceOff(pipe); koop.get(yy).bounceOff(pipe2); koop.get(yy).bounceOff(pipe3); koop.get(yy).bounceOff(bill); koop.get(yy).bounceOff(castle); koop.get(yy).bounceOff(blo2); koop.get(yy).bounceOff(plat); koop.get(yy).bounceOff(fire2); koop.get(yy).bounceOff(bridge)}
+  if(koop.get(yy).isTouching(spring) && koop.get(yy).scale!=2.17){koop.get(yy).velocityY=-10.01}
+  
+if(koop.get(yy).scale==2.19 && (koop.get(yy).velocityY===0 || koop.get(yy).velocityY==0.5)){koop.get(yy).velocityY=-10.51}
+if(koop.get(yy).scale==2.2 || koop.get(yy).scale==2.19){if(koop.get(yy).velocityX<0.2 && koop.get(yy).velocityX>-0.2){if(ww===0){koop.get(yy).velocityX=2} else{koop.get(yy).velocityX=-2}}}
+else{if(koop.get(yy).velocityX<0.61 && koop.get(yy).velocityX>-0.61){if(koop.get(yy).scale!=2.301){if(ww===0){koop.get(yy).velocityX=10} else{koop.get(yy).velocityX=-10}} else{koop.get(yy).velocityX=0.00001}}}
+if(koop.get(yy).velocityX==2 && koop.get(yy).scale==2.2){if(koop.get(yy).bounciness===0){koop.get(yy).setAnimation("koop2")} if(koop.get(yy).bounciness==0.01){koop.get(yy).setAnimation("kop2")} if(koop.get(yy).bounciness==0.02){koop.get(yy).setAnimation("buzzy")} if(koop.get(yy).bounciness==0.03){koop.get(yy).setAnimation("buzzy3")} if(koop.get(yy).bounciness==0.04){koop.get(yy).setAnimation("buzzy5")}} 
+if(koop.get(yy).velocityX==-2 && koop.get(yy).scale==2.2){if(koop.get(yy).bounciness===0){koop.get(yy).setAnimation("koop")} if(koop.get(yy).bounciness==0.01){koop.get(yy).setAnimation("kop")} if(koop.get(yy).bounciness==0.02){koop.get(yy).setAnimation("buzzy2")} if(koop.get(yy).bounciness==0.03){koop.get(yy).setAnimation("buzzy4")} if(koop.get(yy).bounciness==0.04){koop.get(yy).setAnimation("buzzy6")}}
+if(koop.get(yy).velocityX==2 && koop.get(yy).scale==2.19){koop.get(yy).setFrame(0)} 
+if(koop.get(yy).velocityX==-2 && koop.get(yy).scale==2.19){koop.get(yy).setFrame(1)}
+if(koop.get(yy).scale>=2.3){if(koop.get(yy).bounciness===0){koop.get(yy).setFrame(0)} if(koop.get(yy).bounciness==0.01){koop.get(yy).setFrame(1)} if(koop.get(yy).bounciness==0.02){koop.get(yy).setFrame(2)} if(koop.get(yy).bounciness==0.03){koop.get(yy).setFrame(3)} if(koop.get(yy).bounciness==0.04){koop.get(yy).setFrame(4)}}
+if(koop.get(yy).scale==2.18 || koop.get(yy).scale==2.17){koop.get(yy).velocityX=0; koop.get(yy).setFrame(3);
+  if(koop.get(yy).velocityY<=-5){koop.get(yy).scale=2.17}
+  if(koop.get(yy).velocityY>=5){koop.get(yy).scale=2.18}
+  if(koop.get(yy).scale==2.18){koop.get(yy).velocityY=koop.get(yy).velocityY-0.1}
+  else{koop.get(yy).velocityY=koop.get(yy).velocityY+0.1}
+}}
+
+
+//hammer bro
+for (var ii = 0; ii < uu; ii++) {
+  var xyz=randomNumber(0,100);
+  bro.get(ii).setCollider("rectangle",0,0);
+  if(World.frameCount/10==Math.round(World.frameCount/10)){bro.get(ii).velocityX=randomNumber(-1,1)}
+  bro.get(ii).velocityY=bro.get(ii).velocityY+0.5;
+  if(mar.isTouching(bro.get(ii)) && bro.get(ii).scale>0 && thing11===false){if(mar.y<bro.get(ii).y-35){bro.get(ii).scale=-1.8; if(keyDown("up")){mar.velocityY=1.3} else{mar.velocityY=-10.01}} else{thing3=true}}
+  if((bro.get(ii).isTouching(fireBall) || (bro.get(ii).isTouching(mar) && thing11===true) || castle.velocityY>0) && bro.get(ii).scale>0){bro.get(ii).scale=-1.8; score=score+1000}
+  if(mar.isTouching(ham.get(ii)) && thing11===false){thing3=true}
+  if(bro.get(ii).isTouching(spring)){bro.get(ii).velocityY=-10.01}
+  
+  if(bro.get(ii).isTouching(blo) && bro.get(ii).scale>0){bro.get(ii).bounceOff(blo); bro.get(ii).velocityY=0}
+  if((bro.get(ii).isTouching(bla) || bro.get(ii).isTouching(ble) || bro.get(ii).isTouching(blu) || bro.get(ii).isTouching(pipe) || bro.get(ii).isTouching(pipe2) || bro.get(ii).isTouching(pipe3) || bro.get(ii).isTouching(koop) || bro.get(ii).isTouching(bill) || bro.get(ii).isTouching(castle) || bro.get(ii).isTouching(blo2) || bro.get(ii).isTouching(plat) || bro.get(ii).isTouching(fire2) || bro.get(ii).isTouching(bridge)) && bro.get(ii).scale>0){
+    bro.get(ii).bounceOff(bla); bro.get(ii).bounceOff(ble); bro.get(ii).bounceOff(blu); bro.get(ii).bounceOff(pipe); bro.get(ii).bounceOff(pipe2); bro.get(ii).bounceOff(pipe3); bro.get(ii).bounceOff(bill); bro.get(ii).bounceOff(castle); bro.get(ii).bounceOff(blo2); bro.get(ii).bounceOff(plat); bro.get(ii).bounceOff(fire2); bro.get(ii).bounceOff(bridge)}
+  ham.get(ii).velocityY=ham.get(ii).velocityY+1;
+  if(World.frameCount/84==Math.round(World.frameCount/84) && bro.get(ii).scale>0){ham.get(ii).x=bro.get(ii).x; ham.get(ii).y=bro.get(ii).y; ham.get(ii).velocityY=-16; if(mar.x>bro.get(ii).x){ham.get(ii).velocityX=5; ham.get(ii).rotationSpeed=12.5; if(level!=4){bro.get(ii).setAnimation("bro")} else{if(ii==1){bro.get(ii).setAnimation("bows2")}}} else{ham.get(ii).velocityX=-5; ham.get(ii).rotationSpeed=-12.5; if(level!=4){bro.get(ii).setAnimation("bro2")} else{if(ii==1){bro.get(ii).setAnimation("bows")}}}}
+  if(bro.get(ii).velocityY===0 && xyz==7 && bro.get(ii).scale>0){bro.get(ii).velocityY=-12}
+}
+
+ 
+//bullet and bill
+for (var aa = 0; aa < xx; aa++) {
+  bill.get(aa).setCollider("rectangle",0,0);
+ if(World.frameCount/100==Math.round(World.frameCount/100) && ((bull.get(aa).x>camera.x+300 || bull.get(aa).x<camera.x-300) || bull.get(aa).y>camera.y+500)){
+  if(mar.x>bill.get(aa).x){bull.get(aa).velocityX=8} else{bull.get(aa).velocityX=-8} bull.get(aa).x=bill.get(aa).x; bull.get(aa).y=bill.get(aa).y-15; bull.get(aa).velocityY=0}
+ if(bull.get(aa).velocityX>0){bull.get(aa).setFrame(1)} else{bull.get(aa).setFrame(0)}
+ if(mar.isTouching(bill.get(aa))){mar.bounceOff(bill)}
+ if(mar.isTouching(bull.get(aa))){if(mar.y<bull.get(aa).y-15){bull.get(aa).velocityY=10; bull.get(aa).velocityX=0; if(keyDown("up")){mar.velocityY=1.3} else{mar.velocityY=-10.01}} else{thing3=true}}
+ }
+
+//lakitu and spiny
+for (var sd = 0; sd < ty; sd++) {
+  if((lak.get(sd).isTouching(fireBall) || (lak.get(sd).isTouching(mar) && thing11===true)) && lak.get(sd).scale>0){lak.get(sd).scale=-1.5; score=score+100}
+  if(World.frameCount/35==Math.round(World.frameCount/35)){if(lak.get(sd).x>mar.x){lak.get(sd).bounciness=randomNumber(-7,-1)} else{lak.get(sd).bounciness=randomNumber(1,7)}}
+  if(lak.get(sd).scale<1.488 && lak.get(sd).scale>0){spin.add(createSprite(lak.get(sd).x,lak.get(sd).y)); cv=cv+1; spin.get(cv).velocityY=-3; spin.get(cv).scale=1.7; spin.get(cv).setAnimation("spinyEgg"); lak.get(sd).setFrame(0); lak.get(sd).scale=1.5}
+  if(lak.get(sd).velocityX>lak.get(sd).bounciness){lak.get(sd).velocityX=lak.get(sd).velocityX-0.2} else{lak.get(sd).velocityX=lak.get(sd).velocityX+0.2}
+  if(mar.isTouching(lak.get(sd)) && lak.get(sd).scale>0 && thing11===false){if(mar.y<lak.get(sd).y-10){lak.get(sd).scale=-1.5; if(keyDown("up")){mar.velocityY=1.3} else{mar.velocityY=-10.01}} else{thing3=true}}
+  if(lak.get(sd).scale<0){lak.get(sd).velocityX=0; lak.get(sd).velocityY=lak.get(sd).velocityY+0.5}
+  lak.get(sd).scale=lak.get(sd).scale-0.0001;
+}
+for (var fg = 0; fg < cv+1; fg++) {
+  spin.get(fg).velocityY=spin.get(fg).velocityY+0.5;
+  spin.get(fg).bounciness=0;
+  if((spin.get(fg).isTouching(fireBall) || (spin.get(fg).isTouching(mar) && thing11===true)) && spin.get(fg).scale>0){spin.get(fg).scale=-1.6; score=score+100}
+  if(mar.isTouching(spin.get(fg)) && thing11===false){thing3=true}
+  if(spin.get(fg).scale==1.6){if(spin.get(fg).velocityX>0){spin.get(fg).setAnimation("spiny2")} else{spin.get(fg).setAnimation("spiny")}}
+  if(spin.get(fg).velocityX<0.1 && spin.get(fg).velocityX>-0.1){spin.get(fg).velocityX=(ww-0.5)*4}
+ if(spin.get(fg).scale>0 && (spin.get(fg).isTouching(blo) || spin.get(fg).isTouching(bla) || spin.get(fg).isTouching(ble) || spin.get(fg).isTouching(blu) || spin.get(fg).isTouching(pipe) || spin.get(fg).isTouching(pipe2) || spin.get(fg).isTouching(pipe3) || spin.get(fg).isTouching(koop) || spin.get(fg).isTouching(bill) || spin.get(fg).isTouching(castle) || spin.get(fg).isTouching(blo2) || spin.get(fg).isTouching(plat) || spin.get(fg).isTouching(fire2) || spin.get(fg).isTouching(bridge))){
+ spin.get(fg).bounceOff(blo); spin.get(fg).bounceOff(bla); spin.get(fg).bounceOff(ble); spin.get(fg).bounceOff(blu); spin.get(fg).bounceOff(pipe); spin.get(fg).bounceOff(pipe2); spin.get(fg).bounceOff(pipe3); spin.get(fg).bounceOff(bill); spin.get(fg).bounceOff(castle); spin.get(fg).bounceOff(blo2); spin.get(fg).bounceOff(plat); spin.get(fg).bounceOff(fire2); spin.get(fg).bounceOff(bridge); spin.get(fg).scale=1.6}
+}
+
+//blooper
+for (var ap = 0; ap < lq; ap++) {
+  bloop.get(ap).scale=bloop.get(ap).scale-0.001;
+  bloop.get(ap).velocityY=bloop.get(ap).velocityY+0.3;
+  if(bloop.get(ap).velocityY>2 && bloop.get(ap).scale>0){bloop.get(ap).velocityY=2}
+  if(bloop.get(ap).scale<1.75 && bloop.get(ap).scale>0){if(bloop.get(ap).y>mar.y){bloop.get(ap).velocityY=-7} else{bloop.get(ap).velocityY=-4} bloop.get(ap).scale=1.8}
+  if(bloop.get(ap).scale==1.8){if(bloop.get(ap).x>mar.x){bloop.get(ap).velocityX=-12} else{bloop.get(ap).velocityX=12}}
+  bloop.get(ap).velocityX=bloop.get(ap).velocityX/1.2;
+  if(bloop.get(ap).scale>1.75 && bloop.get(ap).scale<1.765){bloop.get(ap).setFrame(1)} else{bloop.get(ap).setFrame(0)}
+  if(mar.isTouching(bloop.get(ap)) && bloop.get(ap).scale>0){if(mar.y<bloop.get(ap).y-25 && yty<2){bloop.get(ap).scale=-1.8; bloop.get(ap).velocityY=5; if(keyDown("up")){mar.velocityY=1.3} else{mar.velocityY=-10.01} score=score+100} else{thing3=true}}
+  if((bloop.get(ap).isTouching(fireBall) || (bloop.get(ap).isTouching(mar) && thing11===true)) && bloop.get(ap).scale>0){bloop.get(ap).scale=-1.8; bloop.get(ap).velocityX=0; score=score+100}
+}
+
+//cheep cheep
+for (var qo = 0; qo < zu; qo++) {
+ if(yty>1 && cheep.get(qo).bounciness==1){if(cheep.get(qo).x>camera.x+400){cheep.get(qo).velocityX=0} else{cheep.get(qo).velocityX=-4} cheep.get(qo).velocityY=0}
+ if(yty>1 && cheep.get(qo).bounciness==0.5){cheep.get(qo).velocityY=0}
+ if(yty<2 || cheep.get(qo).scale<0){cheep.get(qo).velocityY=cheep.get(qo).velocityY+0.3;
+  if(cheep.get(qo).y>mar.y+300 && cheep.get(qo).scale>0){cheep.get(qo).velocityY=randomNumber(-24,-15); cheep.get(qo).y=mar.y+300; if(cheep.get(qo).bounciness==1 || (cheep.get(qo).bounciness==0.5 && (cheep.get(qo).velocityX>0 && cheep.get(qo).x>mar.x) || (cheep.get(qo).velocityX<0 && cheep.get(qo).x<mar.x))){cheep.get(qo).velocityX=cheep.get(qo).velocityX*-1; cheep.get(qo).mirrorX(cheep.get(qo).mirrorX()*-1)}}}
+ else{if(cheep.get(qo).bounciness==0.5){cheep.get(qo).velocityX=cheep.get(qo).velocityX/1.05; if(cheep.get(qo).velocityX<0.3 && cheep.get(qo).velocityX>-0.3){cheep.get(qo).velocityX=cheep.get(qo).velocityX*-35; cheep.get(qo).mirrorX(cheep.get(qo).mirrorX()*-1)}}}
+  if(cheep.get(qo).bounciness==1){cheep.get(qo).setFrame(0)}
+  if(cheep.get(qo).bounciness==0.5){cheep.get(qo).setFrame(1)}
+  if(mar.isTouching(cheep.get(qo)) && cheep.get(qo).scale>0 && cheep.get(qo).visible===true){if(mar.y<cheep.get(qo).y-10 && yty<2){cheep.get(qo).scale=-2; cheep.get(qo).velocityY=5; if(keyDown("up")){mar.velocityY=1.3} else{mar.velocityY=-10.01} score=score+100} else{thing3=true}}
+  if((cheep.get(qo).isTouching(fireBall) || (cheep.get(qo).isTouching(mar) && thing11===true)) && cheep.get(qo).scale>0){cheep.get(qo).scale=-2; score=score+100}
+}
+
+//thwomp
+for (var qa = 0; qa < gh; qa++) {
+ thop.get(qa).setCollider("rectangle",0,0);
+  if(mar.x>thop.get(qa).x-70 && mar.x<thop.get(qa).x+70 && thop.get(qa).velocityY!=-2){thop.get(qa).bounciness=0.00001}
+  if(thop.get(qa).bounciness>0){thop.get(qa).velocityY=thop.get(qa).velocityY+0.5}
+    if(thop.get(qa).isTouching(bla) || thop.get(qa).isTouching(ble) || thop.get(qa).isTouching(blu) || thop.get(qa).isTouching(pipe) || thop.get(qa).isTouching(pipe2) || thop.get(qa).isTouching(pipe3) || thop.get(qa).isTouching(bill) || thop.get(qa).isTouching(castle) || thop.get(qa).isTouching(plat) || thop.get(qa).isTouching(blo) || thop.get(qa).isTouching(blo2) || thop.get(qa).isTouching(fire2) || thop.get(qa).isTouching(bridge)){
+    thop.get(qa).bounceOff(bla); thop.get(qa).bounceOff(ble); thop.get(qa).bounceOff(blu); thop.get(qa).bounceOff(pipe); thop.get(qa).bounceOff(pipe2); thop.get(qa).bounceOff(pipe3); thop.get(qa).bounceOff(bill); thop.get(qa).bounceOff(castle); thop.get(qa).bounceOff(plat); thop.get(qa).bounceOff(blo); thop.get(qa).bounceOff(blo2); thop.get(qa).bounceOff(fire2); thop.get(qa).bounceOff(bridge); thop.get(qa).scale=thop.get(qa).scale-0.000001}
+   if(thop.get(qa).isTouching(spring)){thop.get(qa).velocityY=-10.01}
+   if(thop.get(qa).scale<1.999985){thop.get(qa).velocityY=-2; thop.get(qa).bounciness=0; thop.get(qa).scale=2}
+   if(thop.get(qa).y<thop2.get(qa).y){thop.get(qa).y=thop2.get(qa).y; thop.get(qa).velocityY=0}
+if(thop.get(qa).velocityY==-2 || thop.get(qa).y<thop2.get(qa).y+1){thop.get(qa).setFrame(1)}
+  else{thop.get(qa).setFrame(0)}
+  if(mar.isTouching(thop.get(qa))){thing3=true; mar.bounceOff(thop.get(qa))}
+}
+
+//lava bubble
+for (var bn = 0; bn < jk; bn++) {
+ if(mar.isTouching(ball.get(bn))){thing3=true}
+  ball2.get(bn).visible=false;
+  ball.get(bn).velocityY=ball.get(bn).velocityY+0.5;
+  ball.get(bn).rotation=(ball.get(bn).velocityY/ball.get(bn).velocityX)*60;
+  if(ball.get(bn).velocityX>=0 && ball.get(bn).rotation>180){ball.get(bn).rotation=180}
+  if(ball.get(bn).velocityX<=0 && ball.get(bn).rotation<-180){ball.get(bn).rotation=-180}
+    if(ball.get(bn).velocityX>=0 && ball.get(bn).rotation<0){ball.get(bn).rotation=0}
+  if(ball.get(bn).velocityX<=0 && ball.get(bn).rotation>0){ball.get(bn).rotation=0}
+  if(ball.get(bn).y>ball2.get(bn).y+500){ball.get(bn).velocityY=(ball.get(bn).velocityY*-1)+0.5; ball.get(bn).x=ball2.get(bn).x-(ball.get(bn).velocityX*(62))}
+}
+
+//firebar
+for (var er = 0; er < yb; er++) {
+  fire2.get(er).setCollider("rectangle",0,0);
+  if(gameMode!=1){if(fire.get(er).bounciness<1.5){fire.get(er).setCollider("rectangle",0,1,7,(fire.get(er).height/fire.get(er).scale)-6)}
+  else{fire.get(er).setCollider("rectangle",0,12*((fire.get(er).height/fire.get(er).scale)/48),7,((fire.get(er).height/fire.get(er).scale)/2)-6)}}
+  if(mar.isTouching(fire.get(er))){thing3=true}
+  fire2.get(er).setFrame(0);
+  if(mar.isTouching(fire2.get(er)) && mar.y>fire2.get(er).y+25 && mar.velocityY<0){mar.y=mar.y+13; mar.velocityY=10.01}
+  if(mar.isTouching(fire2.get(er))){mar.bounceOff(fire2.get(er))}
+}
+
+//lava
+for (var xd = 0; xd < vb; xd++) {
+  if(liquid.get(xd).bounciness==1){liquid.get(xd).setFrame(0)}
+  else{liquid.get(xd).setFrame(1)}
+  if(mar.isTouching(liquid.get(xd))){thing3=true}
+}
+
+
+//moving platform scripting
+for (var dd = 0; dd < po; dd++) {
+  plat.get(dd).setCollider("rectangle",0,0);
+  if(plat.get(dd).bounciness<1.5){plat.get(dd).setAnimation("platform")}
+  else{plat.get(dd).setAnimation("platform2")}
+  
+  if(plat.get(dd).bounciness==0.7 || plat.get(dd).bounciness==1.7){
+    if(plat.get(dd).velocityY<=-5){plat.get(dd).scale=3.01}
+  if(plat.get(dd).velocityY>=5){plat.get(dd).scale=3}
+  if(plat.get(dd).scale==3){plat.get(dd).velocityY=plat.get(dd).velocityY-0.1}
+  else{plat.get(dd).velocityY=plat.get(dd).velocityY+0.1}}
+if(plat.get(dd).bounciness==0.8 || plat.get(dd).bounciness==1.8){
+    if(plat.get(dd).velocityX<=-5){plat.get(dd).scale=3.01}
+  if(plat.get(dd).velocityX>=5){plat.get(dd).scale=3}
+  if(plat.get(dd).scale==3){plat.get(dd).velocityX=plat.get(dd).velocityX-0.1}
+  else{plat.get(dd).velocityX=plat.get(dd).velocityX+0.1}
+  if(mar.isTouching(plat.get(dd)) && mar.y<plat.get(dd).y-20 && !keyDown("left") && !keyDown("right")){mar.velocityX=plat.get(dd).velocityX}}
+if(plat.get(dd).bounciness==0.9 || plat.get(dd).bounciness==1.9){
+    plat.get(dd).velocityY=4;
+    if(plat.get(dd).y>plat2.get(dd).y+250){if(World.frameCount/2==Math.round(World.frameCount/2)){plat.get(dd).visible=false} else{plat.get(dd).visible=true}}
+    else{plat.get(dd).visible=true}
+    if(plat.get(dd).y>plat2.get(dd).y+350){plat.get(dd).y=plat2.get(dd).y-300}}
+if(plat.get(dd).bounciness==1 || plat.get(dd).bounciness==2){
+    plat.get(dd).velocityY=-4;
+    if(plat.get(dd).y<plat2.get(dd).y-250){if(World.frameCount/2==Math.round(World.frameCount/2)){plat.get(dd).visible=false} else{plat.get(dd).visible=true}}
+    else{plat.get(dd).visible=true}
+    if(plat.get(dd).y<plat2.get(dd).y-350){plat.get(dd).y=plat2.get(dd).y+300}}
+if(plat.get(dd).bounciness==1.1 || plat.get(dd).bounciness==2.1){
+    if(mar.isTouching(plat.get(dd)) && ewe===0){plat.get(dd).velocityY=0.5}
+    if(plat.get(dd).velocityY>=0.5){plat.get(dd).velocityY=plat.get(dd).velocityY+1.5}}
+if(mar.isTouching(plat.get(dd))){mar.bounceOff(plat.get(dd));
+    if(mar.y>plat.get(dd).y+20){mar.velocityY=10.01} else{mar.velocityY=0}}
+}
+
+//spring
+for (var ll = 0; ll < op; ll++) {
+  spring.get(ll).setCollider("rectangle",0,0);
+  spring.get(ll).velocityY=spring.get(ll).velocityY+0.5;
+  if(spring.get(ll).isTouching(bla) || spring.get(ll).isTouching(ble) || spring.get(ll).isTouching(blu) || spring.get(ll).isTouching(pipe) || spring.get(ll).isTouching(pipe2) || spring.get(ll).isTouching(pipe3) || spring.get(ll).isTouching(bill) || spring.get(ll).isTouching(castle) || spring.get(ll).isTouching(blo) || spring.get(ll).isTouching(blo2) || spring.get(ll).isTouching(plat) || spring.get(ll).isTouching(fire2) || spring.get(ll).isTouching(bridge)){
+    spring.get(ll).bounceOff(bla); spring.get(ll).bounceOff(ble); spring.get(ll).bounceOff(blu); spring.get(ll).bounceOff(pipe); spring.get(ll).bounceOff(pipe2); spring.get(ll).bounceOff(pipe3); spring.get(ll).bounceOff(bill); spring.get(ll).bounceOff(castle); spring.get(ll).bounceOff(blo); spring.get(ll).bounceOff(blo2); spring.get(ll).bounceOff(plat); spring.get(ll).bounceOff(fire2); spring.get(ll).bounceOff(bridge); spring.get(ll).velocityY=0}
+  if(mar.isTouching(spring.get(ll)) && mar.y>spring.get(ll).y-15 && mar.y<spring.get(ll).y){mar.velocityY=-15.01; spring.get(ll).setAnimation("mar"); spring.get(ll).setAnimation("Spring")}
+ if(mar.isTouching(spring.get(ll)) && mar.y<spring.get(ll).y){if(keyWentDown("up")){mar.velocityY=-25.01; spring.get(ll).setAnimation("mar"); spring.get(ll).setAnimation("Spring")}}
+ if(spring.get(ll).isTouching(spring)){spring.bounceOff(spring.get(ll))}
+}
+
+//bridge
+for (var dx = 0; dx < co; dx++) {
+  if(bridge.get(dx).width<80){bridge.get(dx).setCollider("rectangle",0,3.5,21,7)}
+  else{bridge.get(dx).setCollider("rectangle",0,3.5,84,7)}
+  if(mar.isTouching(bridge.get(dx)) && mar.y<bridge.get(dx).y){mar.bounceOff(bridge.get(dx))}
+}
+
+//fire Mar's fire balls
+for (var pop = 0; pop < 2; pop++) {
+  fireBall.get(pop).setAnimation("ballFire");
+  if((fireBall.get(pop).velocityX>-0.1 && fireBall.get(pop).velocityX<0.1) || fireBall.get(pop).y>mar.y+500 || fireBall.get(pop).x>mar.x+500 || fireBall.get(pop).x<mar.x-500 || fireBall.get(pop).isTouching(goo) || fireBall.get(pop).isTouching(koop) || fireBall.get(pop).isTouching(plant) || fireBall.get(pop).isTouching(bro) || fireBall.get(pop).isTouching(lak) || fireBall.get(pop).isTouching(bloop) || fireBall.get(pop).isTouching(cheep) || fireBall.get(pop).isTouching(bull)){fireBall.get(pop).visible=false; fireBall.get(pop).y=10000}
+  if(fireBall.get(pop).visible===true){fireBall.get(pop).velocityY=fireBall.get(pop).velocityY+1}
+    if(fireBall.get(pop).isTouching(blo) || fireBall.get(pop).isTouching(bla) || fireBall.get(pop).isTouching(ble) || fireBall.get(pop).isTouching(blu) || fireBall.get(pop).isTouching(pipe) || fireBall.get(pop).isTouching(pipe2) || fireBall.get(pop).isTouching(pipe3) || fireBall.get(pop).isTouching(koop) || fireBall.get(pop).isTouching(bill) || fireBall.get(pop).isTouching(castle) || fireBall.get(pop).isTouching(blo2) || fireBall.get(pop).isTouching(fire2) || fireBall.get(pop).isTouching(bridge)){
+    fireBall.get(pop).bounceOff(blo); fireBall.get(pop).bounceOff(bla); fireBall.get(pop).bounceOff(ble); fireBall.get(pop).bounceOff(blu); fireBall.get(pop).bounceOff(pipe); fireBall.get(pop).bounceOff(pipe2); fireBall.get(pop).bounceOff(pipe3); fireBall.get(pop).bounceOff(bill); fireBall.get(pop).bounceOff(castle); fireBall.get(pop).bounceOff(blo2); fireBall.get(pop).bounceOff(fire2); fireBall.get(pop).bounceOff(bridge); fireBall.get(pop).velocityY=-6}
+}
+
+//water background
+for (var apa = 0; apa < 4; apa++) {
+  if(yty>1){water.get(apa).visible=true} else{water.get(apa).visible=false}
+}
+
+//clouds
+for(var qw = 0; qw < 30; qw++){
+  if(level!=2 && level!=4){if(yty>1){cloud.get(qw).visible=false} else{cloud.get(qw).visible=true}}
+}
+}
+
+function makerMode() {
+
+if(gameMode==3 || World.frameCount<2){
+
+//Maker Stuff
+if(mouseWentDown("leftButton") && e===0){
+vine.add(createSprite(200,200)); 
+bla.add(createSprite(200,200)); j=j+1}
+if(mouseWentDown("leftButton") && e==1){
+mush.add(createSprite(200,200)); flower.add(createSprite(200,200)); star.add(createSprite(200,200)); 
+ble.add(createSprite(200,200)); d=d+1}
+if(mouseWentDown("leftButton") && e==2){
+blu.add(createSprite(200,200)); kk=kk+1}
+if(mouseWentDown("leftButton") && e==3){
+con.add(createSprite(200,200)); rr=rr+1}
+if(mouseWentDown("leftButton") && e==4){
+plant.add(createSprite(200,200));
+pipe2.add(createSprite(200,200)); zz=zz+1}
+if(mouseWentDown("leftButton") && e==5){
+if(thing10===true){if(!pipe3.get(mz).isTouching(pipe.get(mz))){pipe.add(createSprite(200,200));
+pipe3.add(createSprite(200,200)); mz=mz+1; g=0; thing10=false}}
+else{thing10=true}}
+if(mouseWentDown("leftButton") && e==6){
+goo.add(createSprite(200,200)); tt=tt+1}
+if(mouseWentDown("leftButton") && (e==7 || e==8)){
+koop.add(createSprite(200,200)); qq=qq+1}
+if(mouseWentDown("leftButton") && e==9){
+bro.add(createSprite(200,200));
+ham.add(createSprite(-1000,100)); uu=uu+1}
+if(mouseWentDown("leftButton") && e==10){
+bill.add(createSprite(200,200));
+bull.add(createSprite(-1000,100)); xx=xx+1}
+if(mouseWentDown("leftButton") && e==11){
+lak.add(createSprite(200,200)); ty=ty+1}
+if(mouseWentDown("leftButton") && e==12){
+cheep.add(createSprite(200,200)); zu=zu+1}
+if(mouseWentDown("leftButton") && e==13){
+bloop.add(createSprite(200,200)); lq=lq+1}
+if(mouseWentDown("leftButton") && e==14){
+thop.add(createSprite(200,200));
+thop2.add(createSprite(-200,200)); gh=gh+1}
+if(mouseWentDown("leftButton") && e==15){
+ball.add(createSprite(200,200));
+ball2.add(createSprite(-200,200)); jk=jk+1}
+if(mouseWentDown("leftButton") && e==16){
+fire.add(createSprite(200,200));
+fire2.add(createSprite(-200,200)); yb=yb+1}
+if(mouseWentDown("leftButton") && e==17){
+liquid.add(createSprite(200,200)); vb=vb+1}
+if(mouseWentDown("leftButton") && e==18){
+blo.add(createSprite(200,200)); ff=ff+1}
+if(mouseWentDown("leftButton") && e==19){
+blo2.add(createSprite(200,200)); nm=nm+1}
+if(mouseWentDown("leftButton") && e==20){
+plat.add(createSprite(200,200));
+plat2.add(createSprite(200,200)); po=po+1}
+if(mouseWentDown("leftButton") && e==21){
+bridge.add(createSprite(200,200)); co=co+1}
+if(mouseWentDown("leftButton") && e==22){
+spring.add(createSprite(200,200)); op=op+1}
+if(mouseWentDown("leftButton") && e==23){
+bush.add(createSprite(200,200)); be=be+1}
+
+if(c===0){bla.get(j).setAnimation("blo"); bla.get(j).bounciness=1}
+if(c==1){bla.get(j).setAnimation("blo2"); bla.get(j).bounciness=0.9}
+if(c==2){bla.get(j).setAnimation("blo4"); bla.get(j).bounciness=0.8}
+if(c==3){bla.get(j).setAnimation("blo5"); bla.get(j).bounciness=0.7}
+if(g===0){bla.get(j).scale=2.4; if(c==3){bla.get(j).scale=2.401} bla.get(j).setFrame(0)}
+if(g==1){bla.get(j).scale=2.399; bla.get(j).setFrame(1)}
+if(g==2){bla.get(j).scale=2.401; bla.get(j).setFrame(2)}
+if(g==3){bla.get(j).scale=2.398; if(c==3){bla.get(j).scale=2.399} bla.get(j).setFrame(3)}
+bla.get(j).setCollider("rectangle",0,-5000);
+bla.get(j).x=((((Math.round(mouseX/25.2)*25.2))*(1/0.7))-80)+(36*(Math.round(camera.x/36)))-200;
+bla.get(j).y=((((Math.round(mouseY/25.2)*25.2))*(1/0.7))-150)+(36*(Math.round(camera.y/36)))-125;
+vine.get(j).x=bla.get(j).x; vine.get(j).y=bla.get(j).y+336;
+vine.get(j).setAnimation("vine");
+vine.get(j).scale=2.3;
+vine.get(j).visible=false;
+if(e!==0){bla.get(j).visible=false}
+else{bla.get(j).visible=true}
+
+mush.get(d).setAnimation("mush");
+mush.get(d).scale=1.8;
+mush.get(d).setCollider("rectangle",0,-5000);
+mush.get(d).x=bla.get(j).x; mush.get(d).y=bla.get(j).y;
+mush.get(d).visible=false;
+flower.get(d).setAnimation("fireFlower");
+flower.get(d).scale=1.8;
+flower.get(d).x=bla.get(j).x; flower.get(d).y=bla.get(j).y;
+flower.get(d).bounciness=0;
+flower.get(d).visible=false;
+star.get(d).setAnimation("starman");
+star.get(d).scale=1.8;
+star.get(d).x=bla.get(j).x; star.get(d).y=bla.get(j).y;
+star.get(d).bounciness=0;
+star.get(d).visible=false;
+if(c===0){ble.get(d).setFrame(0); ble.get(d).bounciness=1}
+if(c==1){ble.get(d).setFrame(1); ble.get(d).bounciness=0.9}
+if(c==2){ble.get(d).setFrame(2); ble.get(d).bounciness=0.8}
+if(g===0){ble.get(d).setAnimation("ah4"); ble.get(d).scale=2.399}
+if(g==1){ble.get(d).setAnimation("ah5"); ble.get(d).scale=2.398}
+if(g==2){ble.get(d).setAnimation("ah2"); ble.get(d).scale=2.4; mush.get(d).bounciness=0}
+if(g==3){ble.get(d).setAnimation("ah3"); ble.get(d).scale=2.401}
+if(g==4){ble.get(d).setAnimation("ah6"); ble.get(d).scale=2.402}
+if(g==5){ble.get(d).setAnimation("ah7"); ble.get(d).scale=2.4; mush.get(d).bounciness=0.01}
+ble.get(d).setCollider("rectangle",0,-5000);
+ble.get(d).x=bla.get(j).x; ble.get(d).y=bla.get(j).y;
+if(e!=1){ble.get(d).visible=false}
+else{ble.get(d).visible=true}
+
+blu.get(kk).setAnimation("blo3");
+if(c===0){blu.get(kk).setFrame(0); blu.get(kk).bounciness=1}
+if(c==1){blu.get(kk).setFrame(1); blu.get(kk).bounciness=0.9}
+if(c==2){blu.get(kk).setFrame(2); blu.get(kk).bounciness=0.8}
+if(c==3){blu.get(kk).setFrame(3); blu.get(kk).bounciness=0.7}
+blu.get(kk).scale=2.4;
+blu.get(kk).setCollider("rectangle",0,-5000);
+blu.get(kk).x=bla.get(j).x; blu.get(kk).y=bla.get(j).y;
+if(e!=2){blu.get(kk).visible=false}
+else{blu.get(kk).visible=true}
+
+con.get(rr).setAnimation("con");
+con.get(rr).scale=2.25;
+con.get(rr).x=bla.get(j).x; con.get(rr).y=bla.get(j).y;
+if(e!=3){con.get(rr).visible=false}
+else{con.get(rr).visible=true}
+
+pipe2.get(zz).setAnimation("pipe2");
+pipe2.get(zz).scale=2.87;
+pipe2.get(zz).setCollider("rectangle",0,-5000);
+if(pipe2.get(zz).rotation===0 || pipe2.get(zz).rotation==180){pipe2.get(zz).x=bla.get(j).x-18; pipe2.get(zz).y=bla.get(j).y} else{pipe2.get(zz).x=bla.get(j).x-36; pipe2.get(zz).y=bla.get(j).y-17}
+if(g===0){pipe2.get(zz).rotation=0; plant.get(zz).rotation=0; if(pipe2.get(zz).mirrorY()==-1){pipe2.get(zz).mirrorY(pipe2.get(zz).mirrorY()*-1)}  plant.get(zz).x=pipe2.get(zz).x; plant.get(zz).y=pipe2.get(zz).y-110}
+if(g===1){pipe2.get(zz).rotation=90; plant.get(zz).rotation=90; if(keyWentDown("h")){pipe2.get(zz).mirrorX(pipe2.get(zz).mirrorX()*-1)}  plant.get(zz).x=pipe2.get(zz).x+110; plant.get(zz).y=pipe2.get(zz).y}
+if(g===2){pipe2.get(zz).rotation=180; plant.get(zz).rotation=180; if(mouseWentDown("leftButton") || keyWentDown("h")){pipe2.get(zz).mirrorX(pipe2.get(zz).mirrorX()*-1)} plant.get(zz).x=pipe2.get(zz).x; plant.get(zz).y=pipe2.get(zz).y+110;
+if(keyWentDown("h")){pipe2.get(zz).mirrorY(pipe2.get(zz).mirrorY()*-1)}}
+if(g===3){pipe2.get(zz).rotation=270; plant.get(zz).rotation=270; if(mouseWentDown("leftButton")){pipe2.get(zz).mirrorY(pipe2.get(zz).mirrorY()*-1)} plant.get(zz).x=pipe2.get(zz).x-110; plant.get(zz).y=pipe2.get(zz).y}
+if(c===0){pipe2.get(zz).setFrame(0); pipe2.get(zz).bounciness=1}
+if(c===1){pipe2.get(zz).setFrame(1); pipe2.get(zz).bounciness=0.5}
+if(c===2){pipe2.get(zz).setFrame(2); pipe2.get(zz).bounciness=0}
+if(c===3){pipe2.get(zz).setFrame(3); pipe2.get(zz).bounciness=1.5}
+plant.get(zz).setAnimation("Plant");
+plant.get(zz).scale=1.5;
+if(e!=4){pipe2.get(zz).visible=false; plant.get(zz).visible=false}
+else{pipe2.get(zz).visible=true; plant.get(zz).visible=true}
+
+pipe.get(mz).setAnimation("pipe2");
+pipe.get(mz).scale=2.87;
+pipe3.get(mz).setAnimation("pipe2");
+pipe3.get(mz).scale=2.87;
+if(pipe.get(mz).rotation===0){pipe.get(mz).setCollider("rectangle",0,5000)}
+if(pipe.get(mz).rotation==90){pipe.get(mz).setCollider("rectangle",5000,0)}
+if(pipe.get(mz).rotation==180){pipe.get(mz).setCollider("rectangle",0,-5000)}
+if(pipe.get(mz).rotation==270){pipe.get(mz).setCollider("rectangle",-5000,0)}
+if(pipe3.get(mz).rotation===0){pipe3.get(mz).setCollider("rectangle",0,5000)}
+if(pipe3.get(mz).rotation==90){pipe3.get(mz).setCollider("rectangle",5000,0)}
+if(pipe3.get(mz).rotation==180){pipe3.get(mz).setCollider("rectangle",0,-5000)}
+if(pipe3.get(mz).rotation==270){pipe3.get(mz).setCollider("rectangle",-5000,0)}
+ if(thing10===false){ if(g===0){pipe.get(mz).rotation=0;   if(pipe.get(mz).mirrorY()==-1){pipe.get(mz).mirrorY(pipe.get(mz).mirrorY()*-1)}}
+if(g==1){pipe.get(mz).rotation=90;  if(keyWentDown("h")){pipe.get(mz).mirrorX(pipe.get(mz).mirrorX()*-1)}}
+if(g==2){pipe.get(mz).rotation=180; if(mouseWentDown("leftButton") || keyWentDown("h")){pipe.get(mz).mirrorX(pipe.get(mz).mirrorX()*-1)}
+if(keyWentDown("h")){pipe.get(mz).mirrorY(pipe.get(mz).mirrorY()*-1)}}
+if(g==3){pipe.get(mz).rotation=270; if(mouseWentDown("leftButton")){pipe.get(mz).mirrorY(pipe.get(mz).mirrorY()*-1)}}}
+ if(thing10===true){ if(g===0){pipe3.get(mz).rotation=0;   if(pipe3.get(mz).mirrorY()==-1){pipe3.get(mz).mirrorY(pipe3.get(mz).mirrorY()*-1)}}
+if(g==1){pipe3.get(mz).rotation=90;  if(keyWentDown("h")){pipe3.get(mz).mirrorX(pipe3.get(mz).mirrorX()*-1)}}
+if(g==2){pipe3.get(mz).rotation=180; if((mouseWentDown("leftButton") && !pipe3.get(mz).isTouching(pipe.get(mz))) || keyWentDown("h")){pipe3.get(mz).mirrorX(pipe3.get(mz).mirrorX()*-1)}
+if(keyWentDown("h")){pipe3.get(mz).mirrorY(pipe3.get(mz).mirrorY()*-1)}}
+if(g==3){pipe3.get(mz).rotation=270; if(mouseWentDown("leftButton") && !pipe3.get(mz).isTouching(pipe.get(mz))){pipe3.get(mz).mirrorY(pipe3.get(mz).mirrorY()*-1)}}}
+ if(c===0){pipe.get(mz).setFrame(0); pipe.get(mz).bounciness=1; pipe3.get(mz).setFrame(0); pipe3.get(mz).bounciness=1}
+if(c==1){pipe.get(mz).setFrame(1); pipe.get(mz).bounciness=0.5; pipe3.get(mz).setFrame(1); pipe3.get(mz).bounciness=0.5}
+if(c==2){pipe.get(mz).setFrame(2); pipe.get(mz).bounciness=0; pipe3.get(mz).setFrame(2); pipe3.get(mz).bounciness=0}
+if(c==3){pipe.get(mz).setFrame(3); pipe.get(mz).bounciness=1.5; pipe3.get(mz).setFrame(3); pipe3.get(mz).bounciness=1.5}
+if(thing10===false){if(pipe.get(mz).rotation===0 || pipe.get(mz).rotation==180){pipe.get(mz).x=bla.get(j).x-18; pipe.get(mz).y=bla.get(j).y} else{pipe.get(mz).x=bla.get(j).x-36; pipe.get(mz).y=bla.get(j).y-17}
+pipe3.get(mz).x=bla.get(j).x+100; pipe3.get(mz).y=bla.get(j).y}
+if(thing10===true){if(pipe3.get(mz).rotation===0 || pipe3.get(mz).rotation==180){pipe3.get(mz).x=bla.get(j).x-18; pipe3.get(mz).y=bla.get(j).y} else{pipe3.get(mz).x=bla.get(j).x-36; pipe3.get(mz).y=bla.get(j).y-17}}
+if(e!=5){pipe.get(mz).visible=false; pipe3.get(mz).visible=false}
+else{pipe.get(mz).visible=true; pipe3.get(mz).visible=true}
+
+if(c===0){goo.get(tt).setAnimation("goo"); goo.get(tt).bounciness=0}
+if(c==1){goo.get(tt).setAnimation("goo2"); goo.get(tt).bounciness=0.001}
+if(c==2){goo.get(tt).setAnimation("goo3");goo.get(tt).bounciness=0.01}
+goo.get(tt).scale=2.2;
+goo.get(tt).setCollider("rectangle",0,-5000);
+goo.get(tt).velocityX=0;
+goo.get(tt).x=bla.get(j).x; goo.get(tt).y=bla.get(j).y;
+if(e!=6){goo.get(tt).visible=false}
+else{goo.get(tt).visible=true}
+
+if(e==7){ if(g===0){koop.get(qq).bounciness=0}
+ if(g==1){koop.get(qq).bounciness=0.01}
+ if(c===0){if(koop.get(qq).bounciness===0){koop.get(qq).setAnimation("koop")} if(koop.get(qq).bounciness==0.01){koop.get(qq).setAnimation("kop")} koop.get(qq).scale=2.2}
+ if(c==1){koop.get(qq).setAnimation("koopFly"); if(g===0){koop.get(qq).setFrame(1); koop.get(qq).scale=2.19} else{koop.get(qq).setFrame(3); koop.get(qq).scale=2.18; koop.get(qq).velocityY=-5}}}
+if(e==8){ if(c===0){koop.get(qq).bounciness=0.02}
+ if(c==1){koop.get(qq).bounciness=0.03}
+ if(c==2){koop.get(qq).bounciness=0.04}
+ koop.get(qq).scale=2.2;
+ if(koop.get(qq).bounciness==0.02){koop.get(qq).setAnimation("buzzy2")} if(koop.get(qq).bounciness==0.03){koop.get(qq).setAnimation("buzzy4")} if(koop.get(qq).bounciness==0.04){koop.get(qq).setAnimation("buzzy6")}}
+koop.get(qq).velocityX=-2;
+koop.get(qq).setCollider("rectangle",0,-5000);
+koop.get(qq).x=bla.get(j).x; koop.get(qq).y=bla.get(j).y;
+if(e!=7 && e!=8){koop.get(qq).visible=false}
+else{koop.get(qq).visible=true}
+
+bro.get(uu).setAnimation("bro");
+bro.get(uu).scale=1.8;
+bro.get(uu).setCollider("rectangle",0,-5000);
+bro.get(uu).velocityX=0;
+bro.get(uu).bounciness=0;
+bro.get(uu).x=bla.get(j).x; bro.get(uu).y=bla.get(j).y;
+ham.get(uu).setAnimation("ham");
+ham.get(uu).scale=2.5;
+if(e!=9){bro.get(uu).visible=false}
+else{bro.get(uu).visible=true}
+
+if(c===0){bill.get(xx).setAnimation("bill"); bull.get(xx).setAnimation("bullet")}
+if(c==1){bill.get(xx).setAnimation("bill2"); bull.get(xx).setAnimation("bullet2")}
+bill.get(xx).scale=1.2;
+bill.get(xx).setCollider("rectangle",0,-5000);
+bill.get(xx).bounciness=0;
+bill.get(xx).x=bla.get(j).x; bill.get(xx).y=bla.get(j).y-18;
+bull.get(xx).scale=1;
+if(e!=10){bill.get(xx).visible=false}
+else{bill.get(xx).visible=true}
+
+lak.get(ty).setAnimation("lakitu");
+lak.get(ty).scale=1.5;
+lak.get(ty).x=bla.get(j).x; lak.get(ty).y=bla.get(j).y-18;
+if(e!=11){lak.get(ty).visible=false}
+else{lak.get(ty).visible=true}
+
+cheep.get(zu).setAnimation("cheep");
+cheep.get(zu).scale=2;
+if(c===0){cheep.get(zu).bounciness=1; cheep.get(zu).setFrame(0)}
+if(c==1){cheep.get(zu).bounciness=0.5; cheep.get(zu).setFrame(1)}
+cheep.get(zu).x=bla.get(j).x; cheep.get(zu).y=bla.get(j).y-18;
+cheep.get(zu).velocityX=-4;
+cheep.get(zu).velocityY=0;
+if(e!=12){cheep.get(zu).visible=false}
+else{cheep.get(zu).visible=true}
+
+bloop.get(lq).setAnimation("blooper");
+bloop.get(lq).scale=1.8;
+bloop.get(lq).x=bla.get(j).x; bloop.get(lq).y=bla.get(j).y-18;
+if(e!=13){bloop.get(lq).visible=false}
+else{bloop.get(lq).visible=true}
+
+thop.get(gh).setAnimation("thwomp");
+thop.get(gh).scale=2;
+thop.get(gh).setCollider("rectangle",0,-5000);
+thop.get(gh).bounciness=0;
+thop.get(gh).x=bla.get(j).x+17; thop.get(gh).y=bla.get(j).y;
+thop2.get(gh).setAnimation("con");
+thop2.get(gh).x=bla.get(j).x; thop2.get(gh).y=bla.get(j).y;
+thop2.get(gh).visible=false;
+if(e!=14){thop.get(gh).visible=false}
+else{thop.get(gh).visible=true}
+
+ball.get(jk).setAnimation("ball");
+ball.get(jk).scale=1.5;
+ball.get(jk).velocityX=(c-25)/6;
+ball2.get(jk).width=(c-25)*17.5;
+ball.get(jk).x=bla.get(j).x+12; ball.get(jk).y=bla.get(j).y;
+ball2.get(jk).setAnimation("ball2");
+ball2.get(jk).scale=4;
+ball2.get(jk).x=bla.get(j).x+(c*1.7)-30; ball2.get(jk).y=bla.get(j).y+140;
+ball2.get(jk).visible=true;
+if(e!=15){ball.get(jk).visible=false; ball2.get(jk).visible=false}
+else{ball.get(jk).visible=true; ball2.get(jk).visible=true}
+
+if(c===0){fire.get(yb).bounciness=1.5; fire.get(yb).setAnimation("mar"); fire.get(yb).setAnimation("firebar12")}
+if(c==1){fire.get(yb).bounciness=2; fire.get(yb).setAnimation("mar"); fire.get(yb).setAnimation("firebar22")}
+if(c==2){fire.get(yb).bounciness=2.5; fire.get(yb).setAnimation("mar"); fire.get(yb).setAnimation("firebar32")}
+if(c==3){fire.get(yb).bounciness=0; fire.get(yb).setAnimation("mar"); fire.get(yb).setAnimation("firebar")}
+if(c==4){fire.get(yb).bounciness=0.5; fire.get(yb).setAnimation("mar"); fire.get(yb).setAnimation("firebar2")}
+if(c==5){fire.get(yb).bounciness=1; fire.get(yb).setAnimation("mar"); fire.get(yb).setAnimation("firebar3")}
+if(g===0){fire.get(yb).rotationSpeed=2}
+if(g==1){fire.get(yb).rotationSpeed=4}
+if(g==2){fire.get(yb).rotationSpeed=6}
+fire.get(yb).scale=2.4;
+fire.get(yb).x=bla.get(j).x; fire.get(yb).y=bla.get(j).y;
+fire2.get(yb).setAnimation("ah1");
+fire2.get(yb).setFrame(0);
+fire2.get(yb).scale=2.4;
+fire2.get(yb).setCollider("rectangle",0,-5000);
+fire2.get(yb).x=bla.get(j).x; fire2.get(yb).y=bla.get(j).y;
+if(e!=16){fire.get(yb).visible=false; fire2.get(yb).visible=false}
+else{fire.get(yb).visible=true; fire2.get(yb).visible=true}
+
+if(c===0){liquid.get(vb).bounciness=1; liquid.get(vb).setFrame(0)}
+if(c==1){liquid.get(vb).bounciness=0; liquid.get(vb).setFrame(1)}
+if(g===0){liquid.get(vb).setAnimation("luvu")}
+if(g==1){liquid.get(vb).setAnimation("luvu2")}
+if(g==2){liquid.get(vb).setAnimation("luvu3")}
+liquid.get(vb).scale=4;
+liquid.get(vb).x=bla.get(j).x; liquid.get(vb).y=bla.get(j).y;
+if(e!=17){liquid.get(vb).visible=false}
+else{liquid.get(vb).visible=true}
+
+if(g===0){blo.get(ff).setAnimation("Bloock")}
+if(g==1){blo.get(ff).setAnimation("Bloock2")}
+if(g==2){blo.get(ff).setAnimation("Bloock3")}
+if(c===0){blo.get(ff).setFrame(0); blo.get(ff).bounciness=1}
+if(c==1){blo.get(ff).setFrame(1); blo.get(ff).bounciness=0.5}
+if(c==2){blo.get(ff).setFrame(2); blo.get(ff).bounciness=0.25}
+if(c==3){blo.get(ff).setFrame(3); blo.get(ff).bounciness=0.125}
+if(c==4){blo.get(ff).setFrame(4); blo.get(ff).bounciness=0.0625}
+if(c==5){blo.get(ff).setFrame(5); blo.get(ff).bounciness=2}
+blo.get(ff).scale=2.4;
+blo.get(ff).setCollider("rectangle",0,-5000);
+blo.get(ff).x=bla.get(j).x; blo.get(ff).y=bla.get(j).y;
+if(e!=18){blo.get(ff).visible=false}
+else{blo.get(ff).visible=true}
+
+if(g===0){blo2.get(nm).setAnimation("YES"); blo2.get(nm).scale=2.4;}
+if(g==1){blo2.get(nm).setAnimation("YES2"); blo2.get(nm).scale=2.3999}
+if(g==2){blo2.get(nm).setAnimation("YES3"); blo2.get(nm).scale=2.398}
+if(c===0){blo2.get(nm).setFrame(0); blo2.get(nm).bounciness=1}
+if(c==1){blo2.get(nm).setFrame(1); blo2.get(nm).bounciness=0.5}
+if(c==2){blo2.get(nm).setFrame(2); blo2.get(nm).bounciness=0.25}
+if(c==3){blo2.get(nm).setFrame(3); blo2.get(nm).bounciness=0.125}
+blo2.get(nm).setCollider("rectangle",0,-5000);
+blo2.get(nm).x=bla.get(j).x; blo2.get(nm).y=bla.get(j).y;
+if(e!=19){blo2.get(nm).visible=false}
+else{blo2.get(nm).visible=true}
+
+plat.get(po).setAnimation("PLAT");
+if(g===0){plat.get(po).setAnimation("PLAT")} if(g==1){plat.get(po).setAnimation("PLAT2")}
+if(c===0){plat.get(po).bounciness=0.7+g; plat.get(po).setFrame(0)}
+if(c==1){plat.get(po).bounciness=0.8+g; plat.get(po).setFrame(1)}
+if(c==2){plat.get(po).bounciness=0.9+g; plat.get(po).setFrame(2)}
+if(c==3){plat.get(po).bounciness=1+g; plat.get(po).setFrame(3)}
+if(c==4){plat.get(po).bounciness=1.1+g; plat.get(po).setFrame(4)}
+plat.get(po).scale=3;
+plat.get(po).setCollider("rectangle",0,-5000);
+plat.get(po).x=bla.get(j).x; plat.get(po).y=bla.get(j).y;
+plat2.get(po).x=bla.get(j).x; plat2.get(po).y=bla.get(j).y;
+plat2.get(po).setAnimation("con");
+plat2.get(po).visible=false;
+if(e!=20){plat.get(po).visible=false}
+else{plat.get(po).visible=true}
+
+if(c===0){bridge.get(co).setAnimation("Bridge")}
+if(c==1){bridge.get(co).setAnimation("Bridge2")}
+bridge.get(co).setCollider("rectangle",0,5000);
+bridge.get(co).x=bla.get(j).x-18; bridge.get(co).y=bla.get(j).y-18;
+bridge.get(co).scale=3.429;
+if(e!=21){bridge.get(co).visible=false}
+else{bridge.get(co).visible=true}
+
+spring.get(op).setAnimation("Spring");
+spring.get(op).scale=3;
+spring.get(op).setCollider("rectangle",0,-5000);
+spring.get(op).x=bla.get(j).x; spring.get(op).y=bla.get(j).y;
+if(e!=22){spring.get(op).visible=false}
+else{spring.get(op).visible=true}
+
+if(c===0){bush.get(be).setAnimation("bush"); bush.get(be).y=bla.get(j).y}
+if(c==1){if(g===0){bush.get(be).setAnimation("tree"); bush.get(be).y=bla.get(j).y-30} if(g==1){bush.get(be).setAnimation("tree2"); bush.get(be).y=bla.get(j).y-42} if(g==2){bush.get(be).setAnimation("tree3"); bush.get(be).y=bla.get(j).y-30} if(g==3){bush.get(be).setAnimation("tree4"); bush.get(be).y=bla.get(j).y-42}}
+if(c==2){if(g===0){bush.get(be).setAnimation("hill")} if(g==1){bush.get(be).setAnimation("fence")} bush.get(be).y=bla.get(j).y-15}
+bush.get(be).x=bla.get(j).x;
+bush.get(be).scale=3;
+if(e!=23){bush.get(be).visible=false}
+else{bush.get(be).visible=true}
+
+if(e==24){if(mouseWentDown("leftButton") && con.get(rr).isTouching(castle)){thing4=true}}
+if(thing4===true){
+  castle.x=con.get(rr).x;
+  castle.y=con.get(rr).y-21;
+  flag.x=con.get(rr).x-145;
+  flag.y=con.get(rr).y-96;
+  falg.x=con.get(rr).x-167;
+  falg.y=con.get(rr).y-198;
+  flalg.x=con.get(rr).x+5;
+  flalg.y=con.get(rr).y-11;
+  castle2.x=con.get(rr).x;
+  castle2.y=con.get(rr).y-21;
+  blu.get(0).x=con.get(rr).x-145;
+  blu.get(0).y=con.get(rr).y+36;
+ if(g==1){thing8=true}
+ if(thing8===true){flag.visible=false; falg.visible=false; flalg.visible=false; blu.get(0).visible=false; castle.setAnimation("bridge"); castle2.setAnimation("axe")}
+ if(g===0 && (!keyDown("l") && !keyDown("k"))){flag.visible=true; falg.visible=true; flalg.visible=true; blu.get(0).visible=true; castle.setAnimation("castle"); castle2.setAnimation("castle2"); thing8=false}
+}
+if(thing8===true){castle.x=castle2.x-165; castle.y=castle2.y+50; castle2.setCollider("rectangle",16,14,15,30); if(mar.isTouching(castle2)){mar.bounceOff(castle2)}}
+if(e!=24){thing4=false}
+if(e==24 && g==2){g=0}
+if(thing8===true && mar.isTouching(castle)){mar.bounceOff(castle)}
+
+if(e==24 && tyt===0 && keyWentDown("e")){eraser.add(createSprite(con.get(rr).x,con.get(rr).y+12)); eraser.get(iop).setAnimation("eraser"); eraser.get(iop).scale=2; iop=iop+1}
+if(iop==2){iop=1; eraser.get(0).destroy()}
+if((e!=24 || (tyt==1 && keyWentDown("e"))) && iop==1){eraser.get(0).destroy(); iop=0}
+for(lll=0; lll<iop; lll++){
+eraser.get(lll).x=con.get(rr).x+10; eraser.get(lll).y=con.get(rr).y+12}
+
+if(ewe==1){mar.x=((((Math.round(mouseX)))*(1/0.7))-80)+(18*(Math.round(camera.x/18)))-200; mar.y=((((Math.round(mouseY)))*(1/0.7))-150)+(18*(Math.round(camera.y/18)))-125}
+if(ewe==1){if(mar.y>988){mar.y=988} mar.velocityY=0; thing3=false}
+if(keyWentDown("l")){e=e+1; if(e!=15){c=0} else{c=25} g=0}
+if(keyWentDown("k")){e=e-1; if(e!=15){c=0} else{c=25} g=0}
+if(e!=15){  if(keyWentDown("j")){c=c+1}
+  if(keyWentDown("h")){g=g+1}}
+else{if(keyDown("j")){c=c+1}}
+if(e==25){e=0}
+if(e==-1){e=24}
+if(keyWentDown("n")){e=24}
+if(keyWentDown("e") && e==24){if(tyt===0){tyt=1} else{tyt=0}}
+
+if(e==7 || e==10 || e==12 || e==17 || e==21 || e==22){if(c==2){c=0}}
+if(e==1 || e==6 || e==8 || e==23){if(c==3){c=0}}
+if(e===0 || e==2 || e==4 || e==5 || e==19){if(c==4){c=0}}
+if(e==20){if(c==5){c=0}}
+if(e==16 || e==18){if(c==6){c=0}}
+if(e==15){if(c==50){c=0}}
+if(e==7 || e==20 || e==22){if(g==2){g=0}}
+if(e==16 || e==17 || e==18 || e==19){if(g==3){g=0}}
+if(e===0 || e==4 || e==5 || e==23){if(g==4){g=0}}
+if(e==1){if(g==6){g=0}}
+if(keyWentDown("j") && e==24){yty=yty+1} if(yty>3){yty=0}
+if(keyWentDown("m")){ewe=ewe+1; k=0} if(ewe>1){ewe=0}
+}
+else{e=24; background(rgb(150,170,255))}
+
+if(yty==1 || yty==3){thing2=true} else{thing2=false}
+if(thing2===true){background(rgb(0, 0, 0))}
+else{background(rgb(150,170,255))}
+
+}
+
+function otherThings () {
+  //friction, roll, and absolute position properties, other
+if(thing3===false && thing5===false){
+if(((mar.velocityX>=0.1 || mar.velocityX<=-0.1)&& !keyDown("left") && !keyDown("right")) || (thing19===true && h===0)){mar.velocityX=mar.velocityX/1.15}
+if(mar.velocityX>-0.1 && mar.velocityX<0.1){mar.velocityX=0}
+}
+if(!keyDown("space")){
+ if(yty<2){
+  if(mar.velocityX>9.4){mar.velocityX=9.4}
+  if(mar.velocityX<-9.4){mar.velocityX=-9.4}}
+ else{
+  if(mar.velocityX>6.5){mar.velocityX=6.5}
+  if(mar.velocityX<-6.5){mar.velocityX=-6.5}}
+}
+if(mar.y>1050 && mar.y<1085){thing3=true; mar.scale=1.7; thing=false}
+if(mar.velocityY>18){mar.velocityY=18}
+
+if(mar.velocityX>-9.4){dust.visible=false; dust.scale=0}
+if(dust.visible===true){dust.scale=dust.scale+0.25}
+if(dust.scale>3){dust.scale=3}
+if(mar.velocityX<9.4){dust2.visible=false; dust2.scale=0}
+if(dust2.visible===true){dust2.scale=dust2.scale+0.25}
+if(dust2.scale>3){dust2.scale=3}
+
+
+//camera and background fade
+if(thing3===false){
+if (ewe!=1){camera.x=mar.x}
+if((camera.x<200 && timer<301) || gameMode===0 || gameMode==4){camera.x=200}
+if(ewe!=1 && (mar.y<620 || level!=2) && level!=4 && level!=-1){camera.y=mar.y}
+if(gameMode===0 || gameMode==4){camera.y=800}
+
+if(ewe==1){
+  if(mar.x>camera.x+150){camera.x=camera.x+4}
+  if(mar.x>camera.x+250){camera.x=camera.x+9}
+  if(mar.x<camera.x-150){camera.x=camera.x-4}
+  if(mar.x<camera.x-250){camera.x=camera.x-9}
+  
+  if(mar.y>camera.y+150){camera.y=camera.y+4}
+  if(mar.y>camera.y+250){camera.y=camera.y+9}
+  
+  if(mar.y<camera.y-150){camera.y=camera.y-4}
+  if(mar.y<camera.y-250){camera.y=camera.y-9}
+  
+  thing14=false;
+  thing5=false;
+  falg.y=flag.y-102;
+  y=0;
+}
+
+if(camera.y>800 && camera.y<1100 && timer<300){camera.y=800}
+if(camera.y<90){camera.y=90}}
+if(camera.x>castle.x+70 && thing28===false && thing4===false && castle.rotationSpeed===0){camera.x=castle.x+70}
+if(mar.x<-75){mar.x=-75; mar.velocityX=0}
+if(thing28===false && mar.x>castle2.x+70 && thing8===false && thing4===false && castle.rotationSpeed===0){mar.x=castle2.x+70; mar.velocityX=0}
+if(thing28===false && mar.x>castle2.x+200 && thing8===true && thing4===false && castle.rotationSpeed===0){mar.x=castle2.x+200; mar.velocityX=0}
+
+
+//Mar and Loo interactions, power-up state, death scripting
+if(mar.isTouching(loo)){loo.bounce(mar)}
+if(keyWentDown("q") && loo.visible===true){loo.x=camera.x; loo.y=camera.y; thing13=false}
+if(thing3===true){dust.visible=false; dust2.visible=false; mar.rotation=0}
+if(thing13===true){dust3.visible=false; dust4.visible=false; loo.rotation=0}
+if(keyWentUp("q") && loo.visible===false){thing13=false; loo.visible=true; loo.velocityX=0; loo.velocityY=0; loo.x=camera.x-100; loo.y=200}
+
+if(s>0){if(World.frameCount/2==Math.round(World.frameCount/2)){mar.visible=false} else{mar.visible=true} thing3=false}
+if(mar.y>1080){thing3=true; thing=false; thing16=false; s=0; thing18=false}
+if(thing16===true && thing3===true){thing3=false; thing=false; thing16=false; thing18=true; s=45}
+if(thing===true && thing3===true){thing3=false; thing=false; thing16=true; thing18=true; s=45}
+if(thing18===true){thing3=false; s=s-1;}
+if(s===0){thing18=false; mar.visible=true}
+
+if(thing3===true && thing15===false){mar.velocityX=0; mar.velocityY=0; thing15=true}
+if(thing3===true){mar.setAnimation("mir")}
+if(thing13===true){loo.setAnimation("mir2"); loo.velocityX=0; loo.velocityY=0}
+
+
+//Stage finish and death details
+
+if(flalg.y>castle.y-80.25 && flalg.y<castle.y-80.24){k=200}
+if(flalg.y<castle.y-80.05 && flalg.y>castle.y-80.23){camera.x=-1500; camera.y=-1000}
+
+if(k>125 && k<200 && t>0){camera.x=-1500; camera.y=-1000}
+if(k>=200){k=0; flalg.y=castle.y+10; mar.x=100; mar.y=970; mar.velocityX=0; mar.velocityY=0; mar.rotationSpeed=0; mar.rotation=0; thing5=false; thing14=false; if(gameMode==1 && thing3===false){level=level+1} thing3=false; if(t===0 && gameMode==3){t=999999}}
+if(k==120 && thing5===false && thing14===false){t=t-1}
+
+}
+
+function textAndWinCondition(){
+  //lava bubble and warp pipe text
+textSize(25); fill("white"); stroke("black");
+if(e==15){text("velocity:", ball.get(jk).x-70,ball.get(jk).y-60)}
+if(e==15){text(c-25, ball.get(jk).x+32,ball.get(jk).y-60)}
+if(e==5){
+  if(thing10===false){text("Pipe 1",pipe.get(mz).x-37,pipe.get(mz).y-100)}
+  else{text("Pipe 2",pipe3.get(mz).x-37,pipe3.get(mz).y-100)}}
+
+
+//text for section 1 (menus and stuff)
+textSize(25); fill("yellow"); noStroke();
+if(gameMode===0){
+  text("New Game",290,610); text("Select Level",280,755); text("Maker Mode",280,900); text("How To Play",280,1045);
+}
+if(gameMode==2){
+    text("Level 1",290,610); text("Level 2",280,755); text("Level 3",280,900); text("Level 4",280,1045);
+}
+
+
+//FLAG and win screen
+if(ewe!=1){
+ if(thing3===true){thing5=false; thing14=false}
+ if(mar.isTouching(flag) && thing5===false && thing14===false){y=(Math.round(-2*(mar.y-flag.y-150)/6)*100); if(y>10000){y=10000} score=score+(y); mar.rotationSpeed=0; mar.rotation=0}
+ if(mar.isTouching(flag) && flag.visible===true){thing5=true}
+ fill("white"); textSize(15);
+ if(thing5===true){mar.velocityX=0; mar.velocityY=0;
+  if(!mar.isTouching(blu.get(0)) && thing14===false){mar.x=flag.x-8; mar.y=mar.y+4; falg.y=falg.y+3; if(thing===false){if(thing16===false){mar.setAnimation("grab")} else{mar.setAnimation("2grab")}} else{mar.setAnimation("grab3")}}
+  if(mar.isTouching(blu.get(0))){thing14=true; thing5=false}}
+  if(thing14===true && mar.x>castle2.x+50){mar.x=castle2.x+51;
+    if(w!=f && World.frameCount/15==Math.round(World.frameCount/15)){var firework=createSprite(randomNumber(castle.x-50,castle.x+150),randomNumber(castle.y-225,castle.y-100)); firework.setAnimation("firework");firework.scale=3; w=w+1; score=score+500}}
+  if(y>0){text(y,flag.x+15,falg.y)}
+  if(thing14===true){if(thing===false){if(thing16===false){mar.setAnimation("mor")} else{mar.setAnimation("2mor")}} else{mar.setAnimation("mor2")} mar.x=mar.x+4; mar.velocityY=mar.velocityY=+5; if(w==f){if(flalg.y>castle.y-80){flalg.y=flalg.y-3} else{flalg.y=flalg.y-0.01}}}}
+
+textSize(50);
+fill(rgb(0,0,0,((k*2)/100)-0.5));
+if(thing3===true){k=k+1}
+if((thing3===true && thing5===false && camera.x>-1500) || t<1){rect(-300,-300, 800+mar.x,2500)}
+if(k>150 && t<1){rect(camera.x-150,camera.y-50,300,70); fill("red"); text("Game Over",camera.x-130,camera.y); k=190}
+fill("white");
+textSize(25);
+if(camera.x==-1500){text(t, camera.x+42,camera.y+30)}
+text("Score:",camera.x-280,camera.y-260);
+text(score, camera.x-200,camera.y-260);
+if(timer>382 && thing21===false){k=k+1; fill("black"); rect(-100,900,3000,71); rect(-100,980,3000,50); fill(0,0,0,(k-20)*5); rect(-100,900,3000,90)}
+ if(timer>100 && thing21===true){k=k+1; fill(0,0,0,k*5); rect(500,500,3000,1000); if(k>=123){k=123; fill("white"); text("The End",camera.x-40, camera.y)}}
+
+}
+
+
+function playerControl () {
+  
+  //gravity
+if(thing5===false && thing9===false){if(yty<2){mar.velocityY=mar.velocityY+1.3} else{mar.velocityY=mar.velocityY+0.5}}
+loo.velocityY=loo.velocityY+0.5;
+
+//controls
+if(thing3===false && thing5===false && thing7===false && thing9===false){
+ if(thing19===false || h>0){
+  if(keyDown("right") && mar.velocityX>=0){if(yty<2){mar.velocityX=mar.velocityX+0.35} else{mar.velocityX=mar.velocityX+0.15} if(yty<2 || (mar.velocityY==0.5 || mar.velocityY==1)){if(thing===false){if(thing16===false){mar.setAnimation("mor")} else{mar.setAnimation("2mor")}} else{mar.setAnimation("mor2")}} thing6=false}
+  if(keyDown("right") && mar.velocityX<0){if(yty<2){mar.velocityX=mar.velocityX+1} else{mar.velocityX=mar.velocityX+0.5} if(yty<2 || (mar.velocityY==0.5 || mar.velocityY==1)){if(thing===false){if(thing16===false){mar.setAnimation("mor")} else{mar.setAnimation("2mor")}} else{mar.setAnimation("mor2")}} thing6=false}
+
+  if(keyDown("left") && mar.velocityX<=0){if(yty<2){mar.velocityX=mar.velocityX-0.35} else{mar.velocityX=mar.velocityX-0.15} if(yty<2 || (mar.velocityY==0.5 || mar.velocityY==1)){if(thing===false){if(thing16===false){mar.setAnimation("mer")} else{mar.setAnimation("2mer")}} else{mar.setAnimation("mer2")}} thing6=true}
+  if(keyDown("left") && mar.velocityX>0){if(yty<2){mar.velocityX=mar.velocityX-1} else{mar.velocityX=mar.velocityX-0.5} if(yty<2 || (mar.velocityY==0.5 || mar.velocityY==1)){if(thing===false){if(thing16===false){mar.setAnimation("mer")} else{mar.setAnimation("2mer")}} else{mar.setAnimation("mer2")}} thing6=true}
+ }
+ if(!keyDown("left") && !keyDown("right") && thing6===false && thing19===false){if(yty<2 || (mar.velocityY==0.5 || mar.velocityY==1)){if(thing===false){if(thing16===false){mar.setAnimation("mar")} else{mar.setAnimation("2mar")}} else{mar.setAnimation("mar2")} mar.setFrame(0)}}
+ if(!keyDown("left") && !keyDown("right") && thing6===true && thing19===false){if(yty<2 || (mar.velocityY==0.5 || mar.velocityY==1)){if(thing===false){if(thing16===false){mar.setAnimation("mar")} else{mar.setAnimation("2mar")}} else{mar.setAnimation("mar2")} mar.setFrame(1)}}
+
+if(yty<2){if(keyWentUp("up") && thing20===false && mar.velocityY<0){mar.velocityY=mar.velocityY/2}
+ if(keyWentUp("up")){thing20=true}
+if(mar.velocityY>=1.299 && mar.velocityY<1.3001){mar.velocityY=1.3}
+ if(mar.velocityY>=2.599 && mar.velocityY<2.6001){mar.velocityY=2.6}
+ if(mar.velocityY==1.3 || mar.velocityY==2.6){thing20=false; h=0}
+ //if(keyWentDown("up") && thing20===false){h=1; mar.velocityY=-21.5}
+ if(keyDown("up") && thing20===false && !keyDown("space")){mar.velocityY=mar.velocityY-(0.90/((h+0.01)*4.1)); if(thing===false){if(thing16===false){mar.setAnimation("mur")} else{mar.setAnimation("2mur")}} else{mar.setAnimation("mur2")} h=h+1;
+ if(thing6===false){mar.setFrame(0)}
+ if(thing6===true){mar.setFrame(1)}
+ if(h>40){h=40}}}
+else{if(keyWentDown("up") && mar.y>-110){mar.setAnimation("mar"); mar.velocityY=-7.51; mar.y=mar.y-5}
+if(mar.velocityY!=0.5 && mar.velocityY!=1){if(thing6===true){if(thing===false){if(thing16===false){mar.setAnimation("swim")} else{mar.setAnimation("2swim")}} else{mar.setAnimation("swim3")}} else{if(thing===false){if(thing16===false){mar.setAnimation("swim2")} else{mar.setAnimation("2swim2")}} else{mar.setAnimation("swim4")}}}
+}
+
+ if(keyDown("space")){if(mar.velocityX<0){mar.rotationSpeed=-50; dust.x=mar.x+45; dust.y=mar.y; dust.visible=true; dust2.visible=false}} else{mar.rotationSpeed=0; mar.rotation=0}
+ if(keyDown("space")){if(mar.velocityX>0){mar.rotationSpeed=50; dust2.x=mar.x-45; dust2.y=mar.y; dust2.visible=true; dust.visible=false}} else{mar.rotationSpeed=0; mar.rotation=0}
+ if(keyWentUp("space")){mar.rotationSpeed=0; mar.rotation=0; dust.visible=false; dust2.visible=false}
+ if(keyWentDown("down") && (thing===true || thing16===true) && yty<2){thing19=true; mar.y=mar.y+12}
+ if(thing19===true){if(thing===true){mar.setAnimation("crouch2")} else{mar.setAnimation("crouch")} if(thing6===false){mar.setFrame(0)} else{mar.setFrame(1)}}
+ if(keyWentUp("down") || thing3===true){thing19=false}
+
+ if(keyWentDown("space") && thing===true){if(fireBall.get(1).visible===false && fireBall.get(0).visible===true){fireBall.get(1).visible=true; fireBall.get(1).x=mar.x; fireBall.get(1).y=mar.y-10; fireBall.get(1).velocityY=0; if(thing6===true){fireBall.get(1).velocityX=-10} else{fireBall.get(1).velocityX=10}} if(fireBall.get(0).visible===false){fireBall.get(0).visible=true; fireBall.get(0).x=mar.x; fireBall.get(0).y=mar.y-10; fireBall.get(0).velocityY=0;if(thing6===true){fireBall.get(0).velocityX=-10} else{fireBall.get(0).velocityX=10}}}
+}
+if(thing9===true){if(thing6===false){mar.setFrame(0)} else{mar.setFrame(1)}}
+if(thing11===true){mar.setAnimation("marp"); if(mar.scale>1.685){mar.setFrame(randomNumber(0,4))} else{if(World.frameCount/7==Math.round(World.frameCount/7)){mar.setFrame(randomNumber(0,4))}} mar.rotationSpeed=51; mar.scale=mar.scale-0.0001; thing3=false}
+if(mar.scale<1.68){thing11=false; mar.rotationSpeed=0; mar.rotation=0; mar.scale=1.7}
+
+}
+
+
+function gameModes() {
+  for (var press = 0; press < 5; press++) {
+  if(mar.isTouching(button.get(press)) && button.get(press).visible===true){if(mar.y>button.get(press).y+45){mar.velocityY=10.01; mar.y=mar.y+5} mar.bounceOff(button.get(press))}
+ if(button.get(press).visible===true){
+  if(con.get(0).isTouching(button.get(0))){button.get(0).setFrame(1); if(mouseWentDown("leftButton")){if(gameMode==2){gameMode=1; level=1; mar.x=100; mar.y=970; button.get(press).visible=false} if(gameMode===0){gameMode=1; level=-1; mar.x=100; mar.y=970; button.get(press).visible=false;}}} else{button.get(0).setFrame(0)}
+  if(con.get(0).isTouching(button.get(1))){button.get(1).setFrame(1); if(mouseWentDown("leftButton")){if(gameMode==2){gameMode=1; level=2; mar.x=100; mar.y=970; button.get(press).visible=false} if(gameMode===0){gameMode=1.5}}} else{button.get(1).setFrame(0)}
+  if(con.get(0).isTouching(button.get(2))){button.get(2).setFrame(1); if(mouseWentDown("leftButton")){if(gameMode==2){gameMode=1; level=3; mar.x=100; mar.y=970; button.get(press).visible=false} if(gameMode===0){gameMode=3; button.get(press).visible=false}}} else{button.get(2).setFrame(0)}
+  if(con.get(0).isTouching(button.get(3))){button.get(3).setFrame(1); if(mouseWentDown("leftButton")){if(gameMode==2){gameMode=1; level=4; mar.x=100; mar.y=970; button.get(press).visible=false} if(gameMode===0){gameMode=4; if(press!=3){button.get(press).visible=false}}}} else{button.get(3).setFrame(0)}}
+  
+  if(gameMode===0){button.get(press).visible=true; button.get(3).x=350; button.get(3).y=1035; button.get(3).scale=4.5; button.get(3).setAnimation("button")}
+  if(gameMode==1){button.get(press).visible=false}
+  if(gameMode==2){button.get(press).visible=true}
+  if(gameMode==3){button.get(press).visible=false}
+  if(gameMode==4){if(press!=3){button.get(press).visible=false}}
+  }
+  
+ if(gameMode===0 || gameMode==2 || gameMode==4){
+   con.get(0).x=((((Math.round(mouseX)))*(1/0.7))-80)+((Math.round(camera.x)))-200;
+   con.get(0).y=((((Math.round(mouseY)))*(1/0.7))-80)+((Math.round(camera.y)))-200;
+   con.get(0).scale=0.1;
+ }
+ 
+ if(t===0 && k==200){gameMode=0; level=0; t=3}
+ if(gameMode==1.5){gameMode=2}
+ 
+ if(level==-1){
+   blo.get(0).x=50;
+   if(timer<380){mar.setAnimation("mar"); mar.setFrame(0); mar.y=990}
+   if(timer===0){peach.y=977; peach.x=200; bowser.y=750; bowser.x=-500; car.x=-500; car.y=800; bowser.velocityX=10; car.velocityX=10; bowser.mirrorX(bowser.mirrorX()*-1); car.mirrorX(car.mirrorX()*-1);}
+   if(timer==70){bowser.mirrorX(bowser.mirrorX()*-1); car.mirrorX(car.mirrorX()*-1)}
+   if(timer>70 && timer<110){bowser.velocityX=bowser.velocityX/1.1; car.velocityX=bowser.velocityX}
+   if(timer==110){bowser.velocityX=-15; bowser.velocityY=-6; car.velocityX=0}
+   if(timer>110 && timer<134){bowser.velocityX=bowser.velocityX/1.1; bowser.velocityY=bowser.velocityY+1.3}
+   if(timer==134){bowser.velocityX=0; bowser.velocityY=0; peach.velocityX=10; mar.velocityX=-10}
+   if(timer>134 && timer<165){peach.velocityX=peach.velocityX/1.13}
+  if(timer==165){bowser.mirrorX(bowser.mirrorX()*-1)}
+  if(timer==180){bowser.velocityX=4}
+  if(timer==210){bowser.velocityX=0}
+  if(timer==225){bowser.velocityX=2; peach.velocityX=2; bowser.velocityY=-30; peach.velocityY=-30}
+  if(timer>225 && timer<264){bowser.velocityX=bowser.velocityX/1.1; bowser.velocityY=bowser.velocityY+1.3; peach.velocityX=bowser.velocityX; peach.velocityY=bowser.velocityY;}
+  if(timer==264){bowser.velocityX=0; bowser.velocityY=0; peach.velocityX=0; peach.velocityY=0;}
+  if(timer==269){car.mirrorX(car.mirrorX()*-1)}
+  if(timer>269){bowser.velocityX=bowser.velocityX+1; peach.velocityX=bowser.velocityX; car.velocityX=bowser.velocityX}
+  if(timer==300){camera.zoom=1.35; camera.y=mar.y; camera.x=mar.x}
+  if(timer>340 && timer<380){camera.zoom=3; camera.y=mar.y-5} if(timer>380){camera.zoom=15; camera.y=mar.y-10; mar.setAnimation("mmar")} 
+  if(timer==475){timer=0; level=1; mar.x=100; mar.y=970; camera.zoom=0.7; k=0}
+   timer=timer+1;
+ }
+ 
+ if(gameMode==4){
+   button.get(3).scale=0.68;
+   button.get(3).x=200; button.get(3).y=740;
+   if(yyy==-1){button.get(3).setAnimation("Directions")}
+   if(yyy==0){button.get(3).setAnimation("Directions2")}
+   if(yyy==1){button.get(3).setAnimation("Directions3")}
+   if(yyy==2){yyy=-1; gameMode=0}
+   if(con.get(rr).isTouching(button.get(3))){button.get(3).setFrame(1); if(mouseWentDown("leftButton")){yyy=yyy+1}} else{button.get(3).setFrame(0)}
+ }
+ 
+if(level==1 && mar.x==100 && mar.y==970){
+   f=randomNumber(0,8);
+   
+   blu.get(0).x=50*36; blu.get(0).y=22*36;
+   castle.x=blu.get(0).x+145; castle.y=blu.get(0).y-57;
+   castle2.x=blu.get(0).x+145; castle2.y=blu.get(0).y-57;
+   flag.x=blu.get(0).x; flag.y=blu.get(0).y-132;
+   falg.x=blu.get(0).x-22; falg.y=blu.get(0).y-234;
+   flalg.x=blu.get(0).x+145; flalg.y=blu.get(0).y-47;
+   
+   for(var lev1pipe2 = 1; lev1pipe2 < 9; lev1pipe2++){
+     plant.add(createSprite(0,-1000));
+     plant.get(lev1pipe2).setAnimation("Plant");
+     plant.get(lev1pipe2).scale=1.5;
+     pipe2.add(createSprite(0,-1000));
+     pipe2.get(lev1pipe2).setAnimation("pipe2");
+     pipe2.get(lev1pipe2).scale=2.88;
+     zz=zz+1;
+   }
+   
+   o=1; zz=zz+1;
+   pipe2.get(o).x=14.5*36; pipe2.get(o).y=28*36; plant.get(o).x=pipe2.get(o).x; plant.get(o).y=pipe2.get(o).y-110; o=o+1;
+   pipe2.get(o).x=22.5*36; pipe2.get(o).y=26*36; plant.get(o).x=pipe2.get(o).x; plant.get(o).y=pipe2.get(o).y-110; o=o+1;
+   pipe2.get(o).x=29.5*36; pipe2.get(o).y=26*36; plant.get(o).x=pipe2.get(o).x; plant.get(o).y=pipe2.get(o).y-110; o=o+1;
+   pipe2.get(o).x=35.5*36; pipe2.get(o).y=23*36; plant.get(o).x=pipe2.get(o).x; plant.get(o).y=pipe2.get(o).y-110; o=o+1;
+   pipe2.get(o).x=35.5*36; pipe2.get(o).y=27*36; plant.get(o).x=pipe2.get(o).x; plant.get(o).y=pipe2.get(o).y+110; plant.get(o).rotation=180; pipe2.get(o).rotation=180; pipe2.get(o).mirrorX(pipe2.get(o).mirrorX()*-1); o=o+1;
+   pipe2.get(o).x=35.5*36; pipe2.get(o).y=15*36; plant.get(o).x=pipe2.get(o).x; plant.get(o).y=pipe2.get(o).y+110; plant.get(o).rotation=180; pipe2.get(o).rotation=180; pipe2.get(o).mirrorX(pipe2.get(o).mirrorX()*-1); o=o+1;
+   pipe2.get(o).x=44.5*36; pipe2.get(o).y=27*36; plant.get(o).x=pipe2.get(o).x; plant.get(o).y=pipe2.get(o).y-110; o=o+1;
+   
+   blo.get(0).x=-5*36; blo.get(0).y=30*36;
+   
+   for(var lev1blo = 2; lev1blo < 7; lev1blo++){
+     blo.add(createSprite(0,-1000));
+     blo.get(lev1blo).scale=2.4;
+     blo.get(lev1blo).bounciness=1;
+     blo.get(lev1blo).setAnimation("Bloock3");
+     ff=ff+1;
+   }
+   ff=ff+1;
+   blo.get(0).x=-5*36; blo.get(0).y=30*36;
+   blo.get(2).x=22*36; blo.get(2).y=30*36;
+   blo.get(3).x=49*36; blo.get(3).y=30*36;
+   blo.get(4).x=63*36; blo.get(4).y=27*36;
+   blo.get(5).x=63*36; blo.get(5).y=24*36;
+   
+   for(var lev1bla = 1; lev1bla < 8; lev1bla++){
+     bla.add(createSprite(0,-1000));
+     bla.get(lev1bla).scale=2.4;
+     bla.get(lev1bla).bounciness=1;
+     vine.add(createSprite(bla.get(lev1bla).x,bla.get(lev1bla).y));
+     vine.get(lev1bla).setAnimation("vine");
+     vine.get(lev1bla).scale=2.3;
+     vine.get(lev1bla).visible=false;
+     j=j+1;
+   }
+   o=1; j=j+1;
+   bla.get(o).x=6*36; bla.get(o).y=25*36; o=o+1;
+   bla.get(o).x=8*36; bla.get(o).y=25*36; o=o+1;
+   bla.get(o).x=10*36; bla.get(o).y=25*36; o=o+1;
+   bla.get(o).x=25*36; bla.get(o).y=18*36; o=o+1;
+   bla.get(o).x=27*36; bla.get(o).y=18*36; o=o+1;
+   bla.get(o).x=35*36; bla.get(o).y=9*36; bla.get(o).scale=2.398; o=o+1;
+   
+  for(var lev1ble = 1; lev1ble < 7; lev1ble++){
+     mush.add(createSprite(0,-1000));
+     mush.get(lev1ble).setAnimation("mush");
+     mush.get(lev1ble).scale=1.8;
+     mush.get(lev1ble).bounciness=0;
+     mush.get(lev1ble).visible=false;
+     flower.add(createSprite(0,-1000));
+     flower.get(lev1ble).setAnimation("fireFlower");
+     flower.get(lev1ble).scale=1.8;
+     flower.get(lev1ble).bounciness=0;
+     flower.get(lev1ble).visible=false;
+     star.add(createSprite(0,-1000));
+     star.get(lev1ble).setAnimation("starman");
+     star.get(lev1ble).scale=1.8;
+     star.get(lev1ble).bounciness=0;
+     star.get(lev1ble).visible=false;
+     ble.add(createSprite(0,-1000));
+     ble.get(lev1ble).scale=2.399;
+     ble.get(lev1ble).bounciness=1;
+     d=d+1;
+   }
+   
+   o=1; d=d+1;
+   ble.get(o).x=7*36; ble.get(o).y=25*36; o=o+1;
+   ble.get(o).x=9*36; ble.get(o).y=25*36; ble.get(o).scale=2.4; mush.get(o).x=ble.get(o).x; mush.get(o).y=ble.get(o).y; o=o+1;
+   ble.get(o).x=8*36; ble.get(o).y=22*36; ble.get(o).scale=2.398; o=o+1;
+   ble.get(o).x=26*36; ble.get(o).y=18*36; ble.get(o).scale=2.398; o=o+1;
+   ble.get(o).x=36*36; ble.get(o).y=9*36; ble.get(o).scale=2.4; mush.get(o).x=ble.get(o).x; mush.get(o).y=ble.get(o).y; mush.get(o).bounciness=0.01; o=o+1;
+   
+   for(var lev1blu = 2; lev1blu < 12; lev1blu++){
+     blu.add(createSprite(0,-1000));
+     blu.get(lev1blu).scale=2.4;
+     blu.get(lev1blu).bounciness=1;
+     blu.get(lev1blu).setAnimation("blo3");
+     kk=kk+1;
+   }
+   
+   o=2; kk=kk+1;
+   blu.get(o).x=18*36; blu.get(o).y=23*36; o=o+1;
+   blu.get(o).x=26*36; blu.get(o).y=22*36; o=o+1;
+   blu.get(o).x=35*36; blu.get(o).y=13*36; o=o+1;
+   blu.get(o).x=36*36; blu.get(o).y=13*36; o=o+1;
+   blu.get(o).x=35*36; blu.get(o).y=12*36; o=o+1;
+   blu.get(o).x=36*36; blu.get(o).y=12*36; o=o+1;
+   blu.get(o).x=40*36; blu.get(o).y=21*36; o=o+1;
+   blu.get(o).x=40*36; blu.get(o).y=15*36; o=o+1;
+   blu.get(o).x=44*36; blu.get(o).y=18*36; o=o+1;
+   
+   for(var lev1goo = 1; lev1goo < 5; lev1goo++){
+     goo.add(createSprite(0,-1000));
+     goo.get(lev1goo).setAnimation("goo");
+     goo.get(lev1goo).bounciness=0;
+     goo.get(lev1goo).scale=2.2;
+     koop.add(createSprite(0,-1000));
+     koop.get(lev1goo).setAnimation("koop");
+     koop.get(lev1goo).bounciness=0;
+     koop.get(lev1goo).scale=2.2;
+     tt=tt+1; qq=qq+1;
+   }
+   o=1; tt=tt+1; qq=qq+1;
+   goo.get(o).x=12*36; goo.get(o).y=27*36;
+   koop.get(o).x=19*36; koop.get(o).y=27*36; o=o+1;
+   goo.get(o).x=26*36; goo.get(o).y=27*36;
+   koop.get(o).x=39*36; koop.get(o).y=27*36; o=o+1;
+   goo.get(o).x=31*36; goo.get(o).y=27*36;
+   koop.get(o).x=41*36; koop.get(o).y=27*36; o=o+1;
+   goo.get(o).x=33*36; goo.get(o).y=27*36;
+   koop.get(o).x=43*36; koop.get(o).y=27*36; o=o+1;
+   
+   
+}//end of level 1 code
+
+if(level==2 && mar.x==100 && mar.y==970){
+  
+  pipe2.destroyEach();
+  plant.destroyEach();
+  blo.destroyEach();
+  bla.destroyEach();
+  ble.destroyEach();
+  mush.destroyEach();
+  flower.destroyEach();
+  star.destroyEach();
+  blu.destroyEach();
+  goo.destroyEach();
+  pipe.destroyEach(); pipe3.destroyEach();
+  koop.destroyEach();
+  bro.destroyEach(); ham.destroyEach();
+  zz=0; ff=0; j=0; d=0; kk=0; tt=0; qq=0; uu=0; mz=0;
+  
+  yty=1;
+  f=randomNumber(0,8); 
+   blu.add(createSprite(0,-1000));
+   blu.get(0).setAnimation("blo3");
+   blu.get(0).scale=2.4;
+   kk=kk+1;
+   blu.get(0).x=49*36; blu.get(0).y=14*36;
+   castle.x=blu.get(0).x+145; castle.y=blu.get(0).y-57;
+   castle2.x=blu.get(0).x+145; castle2.y=blu.get(0).y-57;
+   flag.x=blu.get(0).x; flag.y=blu.get(0).y-132;
+   falg.x=blu.get(0).x-22; falg.y=blu.get(0).y-234;
+   flalg.x=blu.get(0).x+145; flalg.y=blu.get(0).y-47;
+   
+   mz=mz+1;
+   pipe.add(createSprite(46.5*36,27*36));
+   pipe3.add(createSprite(43.5*36,13*36));
+   pipe.get(0).setAnimation("pipe2");
+   pipe.get(0).scale=2.87;
+   pipe3.get(0).setAnimation("pipe2");
+   pipe3.get(0).scale=2.87;
+   
+   
+   for(var lev2pipe2 = 0; lev2pipe2 < 2; lev2pipe2++){
+     plant.add(createSprite(0,-1000));
+     plant.get(lev2pipe2).setAnimation("Plant");
+     plant.get(lev2pipe2).scale=1.5;
+     pipe2.add(createSprite(0,-1000));
+     pipe2.get(lev2pipe2).setAnimation("pipe2");
+     pipe2.get(lev2pipe2).scale=2.88;
+     zz=zz+1;
+   }
+   
+   o=0;
+   pipe2.get(o).x=23.5*36; pipe2.get(o).y=19*36; plant.get(o).rotation=180; pipe2.get(o).rotation=180; plant.get(o).x=pipe2.get(o).x; plant.get(o).y=pipe2.get(o).y+110; o=o+1;
+   pipe2.get(o).x=28.5*36; pipe2.get(o).y=26*36; plant.get(o).x=pipe2.get(o).x; plant.get(o).y=pipe2.get(o).y-110; o=o+1;
+
+   for(var lev2blo = 0; lev2blo < 6; lev2blo++){
+     blo.add(createSprite(0,-1000));
+     blo.get(lev2blo).scale=2.4;
+     blo.get(lev2blo).bounciness=0.5;
+     blo.get(lev2blo).setAnimation("Bloock3");
+     ff=ff+1;
+   }
+   o=0;
+   blo.get(o).x=35*36; blo.get(o).y=29*36; o=o+1;
+   blo.get(o).x=11*36; blo.get(o).y=29*36; o=o+1;
+   blo.get(o).x=41*36; blo.get(o).y=16*36; o=o+1;
+   blo.get(o).x=17*36; blo.get(o).y=16*36; o=o+1;
+   blo.get(o).x=5*36; blo.get(o).y=16*36; o=o+1;
+   blo.get(o).x=35*36; blo.get(o).y=23*36; blo.get(o).setAnimation("Bloock2"); o=o+1;
+   
+   for(var lev2bla = 0; lev2bla < 4; lev2bla++){
+     bla.add(createSprite(0,-1000));
+     bla.get(lev2bla).scale=2.4;
+     bla.get(lev2bla).bounciness=0.9;
+     vine.add(createSprite(bla.get(lev2bla).x,bla.get(lev2bla).y));
+     vine.get(lev2bla).setAnimation("vine");
+     vine.get(lev2bla).scale=2.3;
+     vine.get(lev2bla).visible=false;
+     j=j+1;
+   }
+   o=0;
+   bla.get(o).x=15*36; bla.get(o).y=25*36; o=o+1;
+   bla.get(o).x=17*36; bla.get(o).y=25*36; o=o+1;
+   bla.get(o).x=19*36; bla.get(o).y=25*36; o=o+1;
+   bla.get(o).x=17*36; bla.get(o).y=22*36; o=o+1;
+
+
+  for(var lev2ble = 0; lev2ble < 3; lev2ble++){
+     mush.add(createSprite(0,-1000));
+     mush.get(lev2ble).setAnimation("mush");
+     mush.get(lev2ble).scale=1.8;
+     mush.get(lev2ble).bounciness=0;
+     mush.get(lev2ble).visible=false;
+     flower.add(createSprite(0,-1000));
+     flower.get(lev2ble).setAnimation("fireFlower");
+     flower.get(lev2ble).scale=1.8;
+     flower.get(lev2ble).bounciness=0;
+     flower.get(lev2ble).visible=false;
+     star.add(createSprite(0,-1000));
+     star.get(lev2ble).setAnimation("starman");
+     star.get(lev2ble).scale=1.8;
+     star.get(lev2ble).bounciness=0;
+     star.get(lev2ble).visible=false;
+     ble.add(createSprite(0,-1000));
+     ble.get(lev2ble).scale=2.399;
+     ble.get(lev2ble).bounciness=0.9;
+     d=d+1;
+   }
+   
+   o=0;
+   ble.get(o).x=9*36; ble.get(o).y=24*36; o=o+1;
+   ble.get(o).x=10*36; ble.get(o).y=24*36; ble.get(o).scale=2.401; flower.get(o).x=ble.get(o).x; flower.get(o).y=ble.get(o).y; o=o+1;
+   ble.get(o).x=11*36; ble.get(o).y=24*36; ble.get(o).scale=2.398; o=o+1;
+   
+   for(var lev2goo = 0; lev2goo < 2; lev2goo++){
+     goo.add(createSprite(0,-1000));
+     goo.get(lev2goo).setAnimation("goo2");
+     goo.get(lev2goo).bounciness=0.001;
+     goo.get(lev2goo).scale=2.2;
+     koop.add(createSprite(0,-1000));
+     koop.get(lev2goo).setAnimation("koop");
+     koop.get(lev2goo).bounciness=0;
+     koop.get(lev2goo).scale=2.2;
+     bro.add(createSprite(0,-1000));
+     ham.add(createSprite(0,-1000));
+     bro.get(lev2goo).setAnimation("bro");
+     bro.get(lev2goo).scale=1.8;
+     ham.get(lev2goo).setAnimation("ham");
+     ham.get(lev2goo).scale=2.5;
+     tt=tt+1; qq=qq+1; uu=uu+1;
+   }
+   o=0;
+   goo.get(o).x=18*36; goo.get(o).y=27*36;
+   koop.get(o).x=20*36; koop.get(o).y=27*36; 
+   bro.get(o).x=35*36; bro.get(o).y=21*36;
+   ham.get(o).x=35*36; ham.get(o).y=50*36; o=o+1;
+   goo.get(o).x=22*36; goo.get(o).y=27*36;
+   koop.get(o).x=24*36; koop.get(o).y=27*36; 
+   bro.get(o).x=35*36; bro.get(o).y=27*36;
+   ham.get(o).x=35*36; ham.get(o).y=50*36; o=o+1;
+   
+}//end of level 2 code
+
+if(level==3 && mar.x==100 && mar.y==970){
+  
+  pipe2.destroyEach();
+  plant.destroyEach();
+  blo.destroyEach();
+  bla.destroyEach();
+  ble.destroyEach();
+  mush.destroyEach();
+  flower.destroyEach();
+  star.destroyEach();
+  blu.destroyEach();
+  goo.destroyEach();
+  pipe.destroyEach(); pipe3.destroyEach();
+  koop.destroyEach();
+  bro.destroyEach(); ham.destroyEach();
+  bloop.destroyEach(); cheep.destroyEach();
+  zz=0; ff=0; j=0; d=0; kk=0; tt=0; qq=0; uu=0; mz=0; zu=0; lq=0;
+  f=randomNumber(0,8); 
+   blu.add(createSprite(0,-1000));
+   blu.get(0).setAnimation("blo3");
+   blu.get(0).scale=2.4;
+   kk=kk+1;
+   blu.get(0).x=42*36; blu.get(0).y=27*36;
+   castle.x=blu.get(0).x+145; castle.y=blu.get(0).y-57;
+   castle2.x=blu.get(0).x+145; castle2.y=blu.get(0).y-57;
+   flag.x=blu.get(0).x; flag.y=blu.get(0).y-132;
+   falg.x=blu.get(0).x-22; falg.y=blu.get(0).y-234;
+   flalg.x=blu.get(0).x+145; flalg.y=blu.get(0).y-47;
+   
+   mz=mz+2;
+   pipe.add(createSprite(9.5*36,27*36));
+   pipe3.add(createSprite(1.5*36,5*36));
+   pipe.add(createSprite(35*36,0.5*36));
+   pipe3.add(createSprite(35.5*36,27*36));
+   pipe.get(0).setAnimation("pipe2");
+   pipe.get(0).scale=2.87;
+   pipe3.get(0).setAnimation("pipe2");
+   pipe3.get(0).scale=2.87;
+   pipe.get(1).setAnimation("pipe2");
+   pipe.get(1).scale=2.87; pipe.get(1).rotation=270;
+   pipe3.get(1).setAnimation("pipe2");
+   pipe3.get(1).scale=2.87;
+   
+   
+   for(var lev3blo = 0; lev3blo < 10; lev3blo++){
+     blo.add(createSprite(0,-1000));
+     blo.get(lev3blo).scale=2.4;
+     blo.get(lev3blo).bounciness=0.0625;
+     blo.get(lev3blo).setAnimation("Bloock3");
+     ff=ff+1;
+   }
+   o=0;
+   blo.get(o).x=1*36; blo.get(o).y=29*36; blo.get(o).bounciness=1; o=o+1;
+   blo.get(o).x=46*36; blo.get(o).y=29*36; blo.get(o).bounciness=1; o=o+1;
+   blo.get(o).x=13*36; blo.get(o).y=6*36; o=o+1;
+   blo.get(o).x=21*36; blo.get(o).y=6*36; o=o+1;
+   blo.get(o).x=10*36; blo.get(o).y=9*36; o=o+1;
+   blo.get(o).x=18*36; blo.get(o).y=9*36; o=o+1;
+   blo.get(o).x=13*36; blo.get(o).y=2*36; blo.get(o).setAnimation("Bloock2"); o=o+1;
+   blo.get(o).x=19*36; blo.get(o).y=2*36; blo.get(o).setAnimation("Bloock2"); o=o+1;
+   blo.get(o).x=45*36; blo.get(o).y=3*36; o=o+1;
+   blo.get(o).x=45*36; blo.get(o).y=-2*36; o=o+1;
+   
+   
+   for(var lev3bla = 0; lev3bla < 2; lev3bla++){
+     bla.add(createSprite(0,-1000));
+     bla.get(lev3bla).scale=2.4;
+     bla.get(lev3bla).bounciness=1;
+     vine.add(createSprite(bla.get(lev3bla).x,bla.get(lev3bla).y));
+     vine.get(lev3bla).setAnimation("vine");
+     vine.get(lev3bla).scale=2.3;
+     vine.get(lev3bla).visible=false;
+     j=j+1;
+   }
+   o=0;
+   bla.get(o).x=15*36; bla.get(o).y=1*36; o=o+1;
+   bla.get(o).x=17*36; bla.get(o).y=1*36; o=o+1;
+
+
+  for(var lev3ble = 0; lev3ble < 1; lev3ble++){
+     mush.add(createSprite(0,-1000));
+     mush.get(lev3ble).setAnimation("mush");
+     mush.get(lev3ble).scale=1.8;
+     mush.get(lev3ble).bounciness=0;
+     mush.get(lev3ble).visible=false;
+     flower.add(createSprite(0,-1000));
+     flower.get(lev3ble).setAnimation("fireFlower");
+     flower.get(lev3ble).scale=1.8;
+     flower.get(lev3ble).bounciness=0;
+     flower.get(lev3ble).visible=false;
+     star.add(createSprite(0,-1000));
+     star.get(lev3ble).setAnimation("starman");
+     star.get(lev3ble).scale=1.8;
+     star.get(lev3ble).bounciness=0;
+     star.get(lev3ble).visible=false;
+     ble.add(createSprite(0,-1000));
+     ble.get(lev3ble).scale=2.399;
+     ble.get(lev3ble).bounciness=1;
+     d=d+1;
+   }
+   
+   o=0;
+   ble.get(o).x=16*36; ble.get(o).y=1*36; ble.get(o).scale=2.4; mush.get(o).x=ble.get(o).x; mush.get(o).y=ble.get(o).y; mush.get(o).bounciness=0.01; o=o+1;
+   
+   
+   for(var lev3blu = 1; lev3blu < 14; lev3blu++){
+     blu.add(createSprite(0,-1000));
+     blu.get(lev3blu).scale=2.4;
+     blu.get(lev3blu).bounciness=0.7;
+     blu.get(lev3blu).setAnimation("blo3");
+     kk=kk+1;
+   }
+   
+   o=1;
+   blu.get(o).x=3*36; blu.get(o).y=-3*36; o=o+1;
+   blu.get(o).x=3*36; blu.get(o).y=-2*36; o=o+1;
+   blu.get(o).x=6*36; blu.get(o).y=3*36; o=o+1;
+   blu.get(o).x=6*36; blu.get(o).y=4*36; o=o+1;
+   blu.get(o).x=22*36; blu.get(o).y=-3*36; o=o+1;
+   blu.get(o).x=22*36; blu.get(o).y=-2*36; o=o+1;
+   blu.get(o).x=25*36; blu.get(o).y=2*36; o=o+1;
+   blu.get(o).x=25*36; blu.get(o).y=3*36; o=o+1;
+   blu.get(o).x=25*36; blu.get(o).y=4*36; o=o+1;
+   blu.get(o).x=29*36; blu.get(o).y=-3*36; o=o+1;
+   blu.get(o).x=29*36; blu.get(o).y=-2*36; o=o+1;
+   blu.get(o).x=29*36; blu.get(o).y=-1*36; o=o+1;
+   blu.get(o).x=29*36; blu.get(o).y=0*36; o=o+1;
+   
+   
+   
+   for(var lev3goo = 0; lev3goo < 6; lev3goo++){
+     cheep.add(createSprite(0,-1000));
+     cheep.get(lev3goo).setAnimation("cheep");
+     cheep.get(lev3goo).bounciness=1;
+     cheep.get(lev3goo).scale=2;
+     cheep.get(lev3goo).velocityX=1.5;
+     bloop.add(createSprite(0,-1000));
+     bloop.get(lev3goo).setAnimation("blooper");
+     bloop.get(lev3goo).bounciness=1;
+     bloop.get(lev3goo).scale=1.8;
+     zu=zu+1; lq=lq+1;
+   }
+  
+   
+}//end of level 3 code
+
+
+if(level==4 && mar.x==100 && mar.y==970){
+  
+  pipe2.destroyEach();
+  plant.destroyEach();
+  blo.destroyEach();
+  bla.destroyEach();
+  ble.destroyEach();
+  mush.destroyEach();
+  flower.destroyEach();
+  star.destroyEach();
+  blu.destroyEach();
+  goo.destroyEach();
+  pipe.destroyEach(); pipe3.destroyEach();
+  koop.destroyEach();
+  bro.destroyEach(); ham.destroyEach();
+  bloop.destroyEach(); cheep.destroyEach();
+  liquid.destroyEach(); plat.destroyEach();
+  fire.destroyEach(); fire2.destroyEach(); ball.destroyEach(); ball2.destroyEach();
+  zz=0; ff=0; j=0; d=0; kk=0; tt=0; qq=0; uu=0; mz=0; zu=0; lq=0; vb=0; po=0; jk=0; yb=0;
+  f=randomNumber(0,8);
+   blu.add(createSprite(0,0));
+   blu.get(0).setAnimation("blo3");
+   blu.get(0).scale=2.4;
+   kk=kk+1;
+   blu.get(0).x=71*36; blu.get(0).y=27*36;
+   castle.x=blu.get(0).x+145; castle.y=blu.get(0).y-57;
+   castle2.x=blu.get(0).x+145; castle2.y=blu.get(0).y-57;
+   flag.x=blu.get(0).x; flag.y=blu.get(0).y-132;
+   falg.x=blu.get(0).x-22; falg.y=blu.get(0).y-234;
+   flalg.x=blu.get(0).x+145; flalg.y=blu.get(0).y-47;
+   
+   castle.x=castle2.x-165; castle.y=castle2.y+50; castle2.setCollider("rectangle",16,14,15,30);
+   flag.visible=false; falg.visible=false; flalg.visible=false; blu.get(0).visible=false; castle.setAnimation("bridge"); castle2.setAnimation("axe");
+   
+   mar.y=850;
+   yty=1;
+   
+     for(var lev4lava = 0; lev4lava < 9; lev4lava++){
+     liquid.add(createSprite(324*lev4lava,30*36));
+     liquid.get(lev4lava).setAnimation("luvu3");
+     liquid.get(lev4lava).scale=4;
+     vb=vb+1;
+   }
+   
+   zz=zz+2;
+   plant.add(createSprite(0,0));
+   plant.add(createSprite(0,0));
+   pipe2.add(createSprite(24.5*36,28*36));
+   pipe2.add(createSprite(27.5*36,28*36));
+   pipe2.get(0).setAnimation("pipe2");
+   pipe2.get(0).scale=2.88;
+   pipe2.get(1).setAnimation("pipe2");
+   pipe2.get(1).scale=2.88;
+   plant.get(0).setAnimation("Plant");
+   plant.get(0).scale=1.5;
+   plant.get(1).setAnimation("Plant");
+   plant.get(1).scale=1.5;
+   plant.get(0).x=pipe2.get(0).x; plant.get(0).y=pipe2.get(0).y-110;
+   plant.get(1).x=pipe2.get(1).x; plant.get(1).y=pipe2.get(1).y-110;
+   
+   for(var lev4blo = 0; lev4blo < 11; lev4blo++){
+     blo.add(createSprite(0,0));
+     blo.get(lev4blo).scale=2.4;
+     blo.get(lev4blo).bounciness=0.125;
+     blo.get(lev4blo).setAnimation("Bloock3");
+     ff=ff+1;
+   }
+   o=0;
+   blo.get(o).x=11*36; blo.get(o).y=15*36; o=o+1;
+   blo.get(o).x=38*36; blo.get(o).y=15*36; o=o+1;
+   blo.get(o).x=65*36; blo.get(o).y=15*36; o=o+1;
+   blo.get(o).x=-1*36; blo.get(o).y=29*36; o=o+1;
+   blo.get(o).x=83*36; blo.get(o).y=29*36; o=o+1;
+   blo.get(o).x=2*36; blo.get(o).y=26*36; blo.get(o).setAnimation("Bloock2"); o=o+1;
+   blo.get(o).x=-1*36; blo.get(o).y=26*36; blo.get(o).setAnimation("Bloock2"); o=o+1;
+   blo.get(o).x=22*36; blo.get(o).y=29*36; blo.get(o).setAnimation("Bloock2"); o=o+1;
+   blo.get(o).x=30*36; blo.get(o).y=29*36; blo.get(o).setAnimation("Bloock2"); o=o+1;
+   blo.get(o).x=41*36; blo.get(o).y=29*36; blo.get(o).setAnimation("Bloock2"); o=o+1;
+   blo.get(o).x=44*36; blo.get(o).y=29*36; blo.get(o).setAnimation("Bloock2"); o=o+1;
+   
+   
+   for(var lev4bla = 0; lev4bla < 3; lev4bla++){
+     bla.add(createSprite(0,-1000));
+     bla.get(lev4bla).scale=2.4;
+     bla.get(lev4bla).bounciness=0.8;
+     vine.add(createSprite(bla.get(lev4bla).x,bla.get(lev4bla).y));
+     vine.get(lev4bla).setAnimation("vine");
+     vine.get(lev4bla).scale=2.3;
+     vine.get(lev4bla).visible=false;
+     j=j+1;
+   }
+   
+   o=0;
+   bla.get(o).x=9*36; bla.get(o).y=25*36; o=o+1;
+   bla.get(o).x=10*36; bla.get(o).y=25*36; o=o+1;
+   bla.get(o).x=11*36; bla.get(o).y=25*36; o=o+1;
+   
+   for(var lev4blu = 1; lev4blu < 4; lev4blu++){
+     blu.add(createSprite(0,0));
+     blu.get(lev4blu).scale=2.4;
+     blu.get(lev4blu).bounciness=0.8;
+     blu.get(lev4blu).setAnimation("blo3");
+     kk=kk+1;
+   }
+   
+   o=1;
+   blu.get(o).x=34*36; blu.get(o).y=25*36; o=o+1;
+   blu.get(o).x=36*36; blu.get(o).y=25*36; o=o+1;
+   blu.get(o).x=38*36; blu.get(o).y=25*36; o=o+1;
+   
+   for(var lev4plat = 0; lev4plat < 6; lev4plat++){
+     plat.add(createSprite(0,0));
+     plat2.add(createSprite(0,0));
+     plat2.get(lev4plat).visible=false;
+     plat.get(lev4plat).setAnimation("platform");
+     plat.get(lev4plat).scale=3;
+     po=po+1;
+   }
+   o=0;
+   plat.get(o).x=21*36; plat.get(o).y=26*36; plat2.get(o).x=plat.get(o).x; plat2.get(o).y=plat.get(o).y; plat.get(o).bounciness=0.8; o=o+1;
+   plat.get(o).x=52*36; plat.get(o).y=25*36; plat2.get(o).x=plat.get(o).x; plat2.get(o).y=plat.get(o).y; plat.get(o).bounciness=0.8; o=o+1;
+   plat.get(o).x=55*36; plat.get(o).y=25*36; plat2.get(o).x=plat.get(o).x; plat2.get(o).y=plat.get(o).y; plat.get(o).bounciness=1; o=o+1;
+   plat.get(o).x=55*36; plat.get(o).y=18*36; plat2.get(o).x=plat.get(o).x; plat2.get(o).y=plat.get(o).y+(36*4); plat.get(o).bounciness=1; o=o+1;
+   plat.get(o).x=61*36; plat.get(o).y=25*36; plat2.get(o).x=plat.get(o).x; plat2.get(o).y=plat.get(o).y; plat.get(o).bounciness=0.9; o=o+1;
+   plat.get(o).x=61*36; plat.get(o).y=18*36; plat2.get(o).x=plat.get(o).x; plat2.get(o).y=plat.get(o).y+(36*4); plat.get(o).bounciness=0.9; o=o+1;
+
+  for(var lev4fire = 0; lev4fire < 5; lev4fire++){
+    fire.add(createSprite(0,0));
+    fire2.add(createSprite(0,0));
+    ball.add(createSprite(0,0));
+    ball2.add(createSprite(0,0));
+    fire.get(lev4fire).setAnimation("firebar12");
+    fire.get(lev4fire).scale=2.4;
+    fire.get(lev4fire).setCollider("rectangle",0,30,5,70);
+    fire.get(lev4fire).rotationSpeed=2.5;
+    fire.get(lev4fire).bounciness=1.5;
+    fire2.get(lev4fire).setAnimation("ah1");
+    fire2.get(lev4fire).scale=2.4;
+    ball.get(lev4fire).setAnimation("ball");
+    ball.get(lev4fire).scale=1.5;
+    ball2.get(lev4fire).setAnimation("mar");
+    ball2.get(lev4fire).visible=false;
+    jk=jk+1; yb=yb+1; 
+  }
+  
+   for(var lev4goo = 0; lev4goo < 3; lev4goo++){
+     bro.add(createSprite(69*36+(lev4goo*72),24*36));
+     ham.add(createSprite(0,-1000));
+     bro.get(lev4goo).setAnimation("bro");
+     bro.get(lev4goo).scale=1.8;
+     ham.get(lev4goo).setAnimation("ham");
+     ham.get(lev4goo).scale=2.5;
+     uu=uu+1;
+   }
+  
+  o=0;
+  fire2.get(o).x=26*36; fire2.get(o).y=27*36; fire.get(o).x=fire2.get(o).x; fire.get(o).y=fire2.get(o).y;
+  ball.get(o).x=16*36; ball.get(o).y=24*36; ball2.get(o).x=ball.get(o).x; ball2.get(o).y=ball.get(o).y+140; o=o+1;
+  fire2.get(o).x=36*36; fire2.get(o).y=28*36; fire.get(o).x=fire2.get(o).x; fire.get(o).y=fire2.get(o).y;
+  ball.get(o).x=35*36; ball.get(o).y=23*36; ball2.get(o).x=ball.get(o).x; ball2.get(o).y=ball.get(o).y+140; o=o+1;
+  fire2.get(o).x=44*36; fire2.get(o).y=27*36; fire.get(o).x=fire2.get(o).x; fire.get(o).y=fire2.get(o).y;
+  ball.get(o).x=37*36; ball.get(o).y=23*36; ball2.get(o).x=ball.get(o).x; ball2.get(o).y=ball.get(o).y+140; o=o+1;
+  fire2.get(o).x=65*36; fire2.get(o).y=19*36; fire.get(o).x=fire2.get(o).x; fire.get(o).y=fire2.get(o).y; fire.get(o).rotationSpeed=5.5;
+  ball.get(o).x=51*36; ball.get(o).y=24*36; ball2.get(o).x=ball.get(o).x; ball2.get(o).y=ball.get(o).y+140; o=o+1;
+  fire2.get(o).x=65*36; fire2.get(o).y=24*36; fire.get(o).x=fire2.get(o).x; fire.get(o).y=fire2.get(o).y; fire.get(o).rotation=180; fire.get(o).rotationSpeed=5.5;
+  ball.get(o).x=58*36; ball.get(o).y=24*36; ball2.get(o).x=ball.get(o).x; ball2.get(o).y=ball.get(o).y+140; o=o+1;
+  
+   
+}//end of level 4 code
+
+
+
+
+
+
+
+
+
+//level specific conditionals, like changing background
+if(level==2){if(mar.y<620){yty=0; cloud.setVisibleEach(true); blo.get(2).bounciness=1; blo.get(3).bounciness=1; blo.get(4).bounciness=1}
+else{cloud.setVisibleEach(false); camera.y=820}}
+
+if(level==3){if(mar.y<350){yty=2; cheep.setVisibleEach(true);
+  if(mar.y==183){
+   o=0;
+   cheep.get(o).x=5*36; cheep.get(o).y=0*36; if(cheep.get(o).mirrorX==1){cheep.get(o).mirrorX(cheep.get(o).mirrorX()*-1)} 
+   bloop.get(o).x=17*36; bloop.get(o).y=-1*36; o=o+1;
+   cheep.get(o).x=9*36; cheep.get(o).y=2*36; if(cheep.get(o).mirrorX==1){cheep.get(o).mirrorX(cheep.get(o).mirrorX()*-1)}
+   bloop.get(o).x=23*36; bloop.get(o).y=2*36; o=o+1;
+   cheep.get(o).x=12*36; cheep.get(o).y=-1*36; if(cheep.get(o).mirrorX==1){cheep.get(o).mirrorX(cheep.get(o).mirrorX()*-1)}
+   bloop.get(o).x=26*36; bloop.get(o).y=-1*36; o=o+1;
+   cheep.get(o).x=7*36; cheep.get(o).y=0*36; cheep.get(o).mirrorX(cheep.get(o).mirrorX()*-1); cheep.get(o).bounciness=0.5; cheep.get(o).scale=2;
+   bloop.get(o).x=26*36; bloop.get(o).y=3*36; o=o+1;
+   cheep.get(o).x=16*36; cheep.get(o).y=3*36; cheep.get(o).mirrorX(cheep.get(o).mirrorX()*-1); cheep.get(o).bounciness=0.5; cheep.get(o).scale=2;
+   bloop.get(o).x=28*36; bloop.get(o).y=4*36; o=o+1;
+   cheep.get(o).x=19*36; cheep.get(o).y=-1*36; cheep.get(o).mirrorX(cheep.get(o).mirrorX()*-1); cheep.get(o).bounciness=0.5; cheep.get(o).scale=2;
+   bloop.get(o).x=31*36; bloop.get(o).y=1*36; o=o+1}
+  
+} else{yty=0; cheep.setVisibleEach(false)}}
+
+if(level==4){camera.y=850; cloud.setVisibleEach(false); if(mar.isTouching(castle2) && mar.y<castle2.y-10){castle.velocityY=5; castle.rotationSpeed=-4; k=0; thing21=true; timer=0} if(mar.isTouching(castle2) || mar.isTouching(castle)){mar.bounceOff(castle2); mar.bounceOff(castle)}
+  if(thing21===true){thing3=false; timer=timer+1; peach.x=castle.x+600; peach.y=965;
+   if(timer<80 && timer>10){mar.velocityX=5; mar.velocityY=7; if(thing===false){if(thing16===false){mar.setAnimation("mor")} else{mar.setAnimation("2mor")}} else{mar.setAnimation("mor2")}} else{if(thing===false){if(thing16===false){mar.setAnimation("mar")} else{mar.setAnimation("2mar")}} else{mar.setAnimation("mar2")} mar.setFrame(0); mar.velocityX=0}
+  }
+ }
+}//end of the entirety of game mode functions
